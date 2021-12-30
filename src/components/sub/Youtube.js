@@ -1,10 +1,10 @@
-function Department(){
+function Youtube(){
     return(
         <main>
             <div className="inner">
-                <h1><a href="#">Department</a></h1>
+                <h1><a href="#">Youtube</a></h1>
             </div>
         </main>
     )
 }
-export default Department;
+export default Youtube;
