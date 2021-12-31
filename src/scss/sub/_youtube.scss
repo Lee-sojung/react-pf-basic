@@ -8,7 +8,7 @@
             }
 
             article{
-                width: 25%;
+                width: 20%;
                 height: 500px;
                 float: left;
                 padding: 10px;
@@ -24,15 +24,25 @@
                     flex-wrap: wrap;
                     align-content: space-between;
 
+                    /*
+                    word-break : 텍스트의 줄바꿈 속성을 지정
+                    - normal : 한글은 한글자기준, 영어는 단어기준 줄바꿈 defalt값
+                    -break-all : 한글과 영문 모두 글자기준으로 줄바꿈
+                    -keep-all : 한글과 영문 모두 단어기준으로 줄바꿈
+                    
+                    */
+
                     .txt{
                         h2{
                             font: bold 16px/1.2 "arial";
                             color: #555;
                             margin-bottom: 20px;
+                            word-break: break-all;
                         }
                         p{
                             font: 12px/1.2 "arial";
                             color: #888;
+                            word-break: break-all;
                         }
                     }
 
