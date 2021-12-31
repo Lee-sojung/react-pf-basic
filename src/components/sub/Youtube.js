@@ -10,6 +10,8 @@ import { useEffect, useState } from 'react';
 
 function Youtube() {
     let [data, setData] = useState([]);
+    let [isPop, setIsPop] = useState(false);
+    let [index, setIndex] = useState(0);
 
     const api_key = "AIzaSyC7rA3bw12Oogstpe_sGmJFYrmr47anoZ4";
     const playListId = "PLYOPkdUKSFgX5CgKf68RJzJHec0XEdBNd";
@@ -45,7 +47,10 @@ function Youtube() {
                                             <h2>{(tit_len > 30) ? tit = tit.substr(0, 30) + "..." : tit}</h2>
                                             <p>{(desc_len > 150) ? desc = desc.substr(0, 150) + "..." : desc}</p>
                                         </ div>
-                                        <div className="pic">
+                                        <div className="pic" onClick={() => {
+                                            setIsPop(true);
+                                            setIndex(index);
+                                        }}>
                                             <img src={item.snippet.thumbnails.medium.url} />
                                         </div>
                                     </div>
@@ -55,9 +60,24 @@ function Youtube() {
                     }
                 </section>
 
+                {isPop ? <Pop /> : null}
+
             </div>
         </main>
     )
+
+    function Pop() {
+        return (
+            <aside className="pop">
+                <iframe
+                    src={"https://www.youtube.com/embed/" + data[index].snippet.resourceId.videoId} width='100%' height='100%' allowFullScreen>
+                </iframe>
+                <span onClick={() => {
+                    setIsPop(false);
+                }}>Close</span>
+            </aside>
+        )
+    }
 }
 
 export default Youtube;
