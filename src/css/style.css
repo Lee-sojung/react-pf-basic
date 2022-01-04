@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Manrope:wght@300&family=PT+Sans+Narrow&family=Roboto+Condensed&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -12,11 +13,10 @@ a {
   outline: 0; }
 
 body {
-  background: #efefef; }
+  background: rgba(218, 218, 218, 0.664); }
 
 header {
-  width: 100%;
-  background: #333; }
+  width: 100%; }
   header .inner {
     width: 1180px;
     height: 100px;
@@ -27,8 +27,8 @@ header {
       left: 0;
       bottom: 20px; }
       header .inner h1 a {
-        font: bold 20px/1 "arial";
-        color: #fff; }
+        font: bold 20px/1 "Dosis";
+        color: #555; }
     header .inner #gnb {
       position: absolute;
       bottom: 0px;
@@ -38,8 +38,8 @@ header {
         header .inner #gnb li a {
           display: inline-block;
           padding: 22px 30px;
-          font: 14px/1 "arial";
-          color: #fff; }
+          font: normal 13px/1 "Dosis";
+          color: #777; }
 
 main {
   padding: 100px 0px; }
@@ -93,32 +93,68 @@ figure {
     min-height: 300px;
     margin: 0px auto; }
 
-.gallery .inner > section::after {
-  content: "";
-  display: block;
-  clear: both; }
-.gallery .inner > section article {
-  width: 25%;
-  height: 300px;
-  float: left;
-  padding: 10px; }
-  .gallery .inner > section article > .inner {
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 10px; }
-    .gallery .inner > section article > .inner .pic {
+.gallery .inner {
+  position: relative; }
+  .gallery .inner .loading {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    width: 20%;
+    transform: translateX(-50%); }
+  .gallery .inner h1 a {
+    font: normal 80px/1 "PT Sans Narrow";
+    color: #333; }
+  .gallery .inner h1::after {
+    content: "";
+    display: block;
+    width: 68%;
+    height: 1px;
+    background: #555;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+  .gallery .inner p {
+    font: 16px/1.3 "PT Sans Narrow";
+    color: #555;
+    margin: 0 auto;
+    width: 450px;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    margin-bottom: 150px; }
+  .gallery .inner .list::after {
+    content: "";
+    display: block;
+    clear: both; }
+  .gallery .inner .list article {
+    width: 25%;
+    height: 300px;
+    float: left;
+    padding: 10px;
+    border-top: 1px solid #555; }
+    .gallery .inner .list article > .inner {
       width: 100%;
-      height: 180px;
-      margin-bottom: 20px; }
-      .gallery .inner > section article > .inner .pic img {
+      height: 100%;
+      padding: 25px 10px; }
+      .gallery .inner .list article > .inner .pic {
         width: 100%;
-        height: 100%;
-        object-fit: cover; }
-    .gallery .inner > section article > .inner h2 {
-      font: normal 14px/1.2 "arial";
-      color: #777; }
+        height: 180px;
+        margin-bottom: 20px; }
+        .gallery .inner .list article > .inner .pic img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          filter: grayscale(1);
+          transition: 1s;
+          cursor: pointer; }
+          .gallery .inner .list article > .inner .pic img:hover {
+            filter: grayscale(0); }
+      .gallery .inner .list article > .inner h2 {
+        font: normal 14px/1.2 "PT Sans Narrow";
+        letter-spacing: 0.7px;
+        color: #777; }
+      .gallery .inner .list article > .inner strong {
+        font: normal 12px/1.2 "PT Sans Narrow";
+        letter-spacing: 0.7px;
+        color: #777; }
 .gallery .pop {
   width: 100%;
   height: 100vh;
@@ -144,24 +180,41 @@ figure {
     right: 5vw;
     cursor: pointer; }
 
+.youtube .inner h1 a {
+  font: normal 80px/1 "PT Sans Narrow";
+  color: #333; }
+.youtube .inner h1::after {
+  content: "";
+  display: block;
+  width: 68%;
+  height: 1px;
+  background: #555;
+  margin-top: 20px;
+  margin-bottom: 30px; }
+.youtube .inner p {
+  font: 16px/1.3 "PT Sans Narrow";
+  color: #555;
+  margin: 0 auto;
+  width: 450px;
+  word-wrap: break-word;
+  letter-spacing: 1px;
+  margin-bottom: 150px; }
 .youtube .inner .frame::after {
   content: "";
   display: block;
   clear: both; }
 .youtube .inner .frame article {
-  width: 20%;
-  height: 500px;
-  float: left;
+  width: 100%;
+  height: 250px;
   padding: 10px;
   overflow: hidden; }
   .youtube .inner .frame article .inner {
     width: 100%;
     height: 100%;
-    background: #fff;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 30px;
     display: flex;
     flex-wrap: wrap;
+    border-top: 1px solid #555;
     align-content: space-between;
     /*
     word-break : 텍스트의 줄바꿈 속성을 지정
@@ -170,23 +223,46 @@ figure {
     -keep-all : 한글과 영문 모두 단어기준으로 줄바꿈
     
     */ }
-    .youtube .inner .frame article .inner .txt h2 {
-      font: bold 16px/1.2 "arial";
-      color: #555;
-      margin-bottom: 20px;
-      word-break: break-all; }
-    .youtube .inner .frame article .inner .txt p {
-      font: 12px/1.2 "arial";
-      color: #888;
-      word-break: break-all; }
+    .youtube .inner .frame article .inner .txt {
+      position: relative;
+      width: 70%;
+      float: left; }
+      .youtube .inner .frame article .inner .txt h2 {
+        font: bold 16px/1.2 "PT Sans Narrow";
+        color: #555;
+        margin-bottom: 20px;
+        word-break: break-all;
+        letter-spacing: 1px; }
+      .youtube .inner .frame article .inner .txt p {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-15%);
+        width: 400px;
+        font: 14px/1.2 "PT Sans Narrow";
+        letter-spacing: 0.7px;
+        color: #888;
+        word-break: break-all; }
+      .youtube .inner .frame article .inner .txt > span > a {
+        position: absolute;
+        bottom: 0;
+        left: 42%;
+        font: 12px/1.2 "PT Sans Narrow";
+        letter-spacing: 1px;
+        color: #555; }
     .youtube .inner .frame article .inner .pic {
-      width: 100%;
-      height: 150px;
+      float: right;
+      width: 30%;
+      height: 110%;
       cursor: pointer; }
       .youtube .inner .frame article .inner .pic img {
         width: 100%;
         height: 100%;
-        object-fit: cover; }
+        object-fit: cover;
+        filter: grayscale(1);
+        transition: 1s; }
+        .youtube .inner .frame article .inner .pic img:hover {
+          filter: grayscale(0); }
 .youtube .inner .pop {
   width: 100%;
   height: 100vh;
@@ -196,9 +272,13 @@ figure {
   background: rgba(0, 0, 0, 0.9);
   padding: 5vw; }
   .youtube .inner .pop iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border: none;
-    width: 100%;
-    height: 100%; }
+    width: 65%;
+    height: 65%; }
   .youtube .inner .pop span {
     position: absolute;
     top: 3vw;
