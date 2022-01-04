@@ -118,14 +118,14 @@
             height: 100vh;
             position: fixed;
             top: 0px; left: 0px;
-            background: rgba(0,0,0,.9);
+            background: rgba(37, 37, 37, 0.9);
             padding: 5vw;
 
             iframe{
                 position: absolute;
                 top: 50%; left: 50%;
                 transform: translate(-50%,-50%);
-                border: none;
+                border: 3px solid #111;
                 width: 65%;
                 height: 65%;
             }
@@ -133,7 +133,8 @@
             span{
                 position: absolute;
                 top: 3vw; right: 5vw;
-                font: 14px/1 "arial";
+                font: 14px/1 "PT Sans Narrow";
+                letter-spacing: 0.5px;
                 color: #fff;
                 cursor: pointer;
             }

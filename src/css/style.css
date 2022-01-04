@@ -202,19 +202,29 @@ figure {
   position: fixed;
   top: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(37, 37, 37, 0.9);
   padding: 5vw; }
   .gallery .pop img {
-    width: 100%;
-    height: 95%;
+    width: 65%;
+    height: 65%;
     object-fit: contain;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .gallery .pop p {
-    font: 14px/1.2 "arial";
+    background: #222;
+    font: 14px/1.2 "PT Sans Narrow";
     color: #fff;
-    text-align: center; }
+    position: absolute;
+    top: 48%;
+    left: 17.6%;
+    text-align: center;
+    letter-spacing: 1px; }
   .gallery .pop span {
-    font: bold 14px/1 "arial";
+    font: bold 14px/1 "PT Sans Narrow";
+    letter-spacing: 0.5px;
     color: #fff;
     position: absolute;
     top: 3vw;
@@ -310,21 +320,22 @@ figure {
   position: fixed;
   top: 0px;
   left: 0px;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(37, 37, 37, 0.9);
   padding: 5vw; }
   .youtube .inner .pop iframe {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: none;
+    border: 3px solid #111;
     width: 65%;
     height: 65%; }
   .youtube .inner .pop span {
     position: absolute;
     top: 3vw;
     right: 5vw;
-    font: 14px/1 "arial";
+    font: 14px/1 "PT Sans Narrow";
+    letter-spacing: 0.5px;
     color: #fff;
     cursor: pointer; }
 
