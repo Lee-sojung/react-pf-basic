@@ -5,7 +5,7 @@ function Header(){
     return(
         <header>
             <div className="inner">
-                <h1> <NavLink exact to="/">PORTFOLIO REACT</NavLink> </h1>
+                <h1> <NavLink exact to="/">REACT PORTFOLIO</NavLink> </h1>
 
                 <ul id="gnb">
                     <li><NavLink activeStyle={active} exact to="/department">DEPARTMENT</NavLink></li>
