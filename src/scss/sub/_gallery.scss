@@ -35,26 +35,45 @@
             letter-spacing: 1px;
             margin-bottom: 150px;
         }
+
+        .searchBox{
+            text-align: right;
+            margin-bottom: 20px;
+
+            input{
+                width: 100px;
+                height: 24px;
+                border-radius: 3px;
+                border: 1px solid #555;
+                background: none;
+                margin-right: 10px;
+            }
+            button{
+                font: normal 14px/1.2 "PT Sans Narrow";
+                padding: 2px;
+                letter-spacing: 0.4px;
+                
+            }
+        }
         .list{
             &::after{
                 content: "";
                 display: block;
                 clear: both;
             }
-
             article{
                 width: 25%; height: 300px; float: left;
                 padding: 10px;
                 border-top: 1px solid #555;
-                
+
                 >.inner{
                     width: 100%; height: 100%; 
                     padding: 25px 10px;
-                    
+
 
                     .pic{
                         width: 100%; height: 180px; margin-bottom: 20px;
-                        
+
 
                         img{
                             width: 100%; height: 100%;
@@ -68,7 +87,7 @@
                             }
                         }
 
-                        
+
                     }
 
                     h2{
@@ -86,13 +105,11 @@
             }
         }
     }
-
     .pop{
         width: 100%; height: 100vh;
         position: fixed;
         top: 0px; left: 0px; background: rgba(0,0,0,.9);
         padding: 5vw;
-
         img{
             width: 100%; height: 95%;
             object-fit: contain;
@@ -113,4 +130,3 @@
         }
     }
 }
-
