@@ -63,7 +63,7 @@
 
 
                         h2{
-                            font: bold 16px/1.2 "PT Sans Narrow";
+                            font: bold 17px/1.2 "PT Sans Narrow";
                             color: #555;
                             margin-bottom: 20px;
                             word-break: break-all;
@@ -74,7 +74,7 @@
                             top:0; left: 50%;
                             transform: translateX(-15%);
                             width: 400px;
-                            font: 14px/1.2 "PT Sans Narrow";
+                            font: 15px/1.2 "PT Sans Narrow";
                             letter-spacing: 0.7px;
                             color: #888;
                             word-break: break-all;
@@ -83,7 +83,7 @@
                             >a{
                                 position: absolute;
                                 bottom: 0; left: 42%;
-                                font: 12px/1.2 "PT Sans Narrow";
+                                font: 14px/1.2 "PT Sans Narrow";
                                 letter-spacing: 1px;
                                 color: #555;
                             }
@@ -121,11 +121,11 @@
             background: rgba(37, 37, 37, 0.9);
             padding: 5vw;
 
+
             iframe{
                 position: absolute;
                 top: 50%; left: 50%;
                 transform: translate(-50%,-50%);
-                border: 3px solid #111;
                 width: 65%;
                 height: 65%;
             }

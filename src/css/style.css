@@ -13,7 +13,7 @@ a {
   outline: 0; }
 
 body {
-  background: rgba(218, 218, 218, 0.664); }
+  background: #efefef; }
 
 header {
   width: 100%; }
@@ -100,25 +100,111 @@ figure {
     width: 1180px;
     margin: 0px auto; }
 
-.community .inner h1 a {
-  font: normal 80px/1 "PT Sans Narrow";
-  color: #333; }
-.community .inner h1::after {
-  content: "";
-  display: block;
-  width: 68%;
-  height: 1px;
-  background: #555;
-  margin-top: 20px;
-  margin-bottom: 30px; }
-.community .inner p {
-  font: 16px/1.3 "PT Sans Narrow";
-  color: #555;
-  margin: 0 auto;
-  width: 450px;
-  word-wrap: break-word;
-  letter-spacing: 1px;
-  margin-bottom: 150px; }
+.community .inner {
+  position: relative; }
+  .community .inner > h1 > a {
+    font: normal 80px/1 "PT Sans Narrow";
+    color: #333; }
+  .community .inner > h1::after {
+    content: "";
+    display: block;
+    width: 68%;
+    height: 1px;
+    background: #555;
+    margin-top: 20px;
+    margin-bottom: 30px; }
+  .community .inner p {
+    font: 16px/1.3 "PT Sans Narrow";
+    color: #555;
+    margin: 0 auto;
+    width: 450px;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    margin-bottom: 150px; }
+  .community .inner .tbox {
+    width: 68%;
+    height: 100%;
+    padding: 12px 0px;
+    border-top: 1px solid #555; }
+    .community .inner .tbox > strong {
+      width: 10%;
+      font: normal 15px/35px "PT Sans Narrow";
+      color: #333;
+      float: left;
+      text-align: left; }
+    .community .inner .tbox > h2 {
+      width: 65%;
+      font: normal 15px/35px "PT Sans Narrow";
+      color: #333;
+      float: left;
+      letter-spacing: 0.5px;
+      text-align: center; }
+    .community .inner .tbox > span {
+      width: 10%;
+      font: normal 15px/35px "PT Sans Narrow";
+      color: #333;
+      float: left;
+      letter-spacing: 0.5px;
+      margin-left: 10px; }
+    .community .inner .tbox > em {
+      width: 10%;
+      font: normal 15px/35px "PT Sans Narrow";
+      color: #333;
+      float: right;
+      text-align: center; }
+  .community .inner article {
+    width: 68%;
+    position: relative;
+    padding: 30px 0px; }
+    .community .inner article > .left {
+      width: 100%;
+      height: 100%;
+      padding: 12px 0px;
+      border-top: 1px solid #555;
+      float: left;
+      text-align: left; }
+      .community .inner article > .left strong {
+        margin-left: 10px;
+        width: 10%;
+        font: normal 17px/35px "PT Sans Narrow";
+        color: #555;
+        float: left; }
+      .community .inner article > .left > h2 {
+        width: 65%;
+        font: normal 17px/35px "PT Sans Narrow";
+        color: #555;
+        float: left;
+        letter-spacing: 0.5px; }
+      .community .inner article > .left > span {
+        width: 10%;
+        font: normal 17px/35px "PT Sans Narrow";
+        color: #555;
+        float: left;
+        letter-spacing: 0.5px; }
+      .community .inner article > .left > em {
+        width: 10%;
+        font: normal 17px/35px "PT Sans Narrow";
+        color: #555;
+        float: right; }
+      .community .inner article > .left:hover {
+        background: rgba(180, 171, 157, 0.274); }
+  .community .inner .right {
+    width: 28%;
+    float: right;
+    position: absolute;
+    top: 342px;
+    right: 0; }
+    .community .inner .right .pic1 {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      filter: grayscale(1); }
+    .community .inner .right .pic2 {
+      object-fit: cover;
+      margin-top: 30px;
+      width: 100%;
+      height: 240px;
+      filter: grayscale(1); }
 
 .gallery .inner {
   position: relative; }
@@ -279,7 +365,7 @@ figure {
       width: 70%;
       float: left; }
       .youtube .inner .frame article .inner .txt h2 {
-        font: bold 16px/1.2 "PT Sans Narrow";
+        font: bold 17px/1.2 "PT Sans Narrow";
         color: #555;
         margin-bottom: 20px;
         word-break: break-all;
@@ -290,7 +376,7 @@ figure {
         left: 50%;
         transform: translateX(-15%);
         width: 400px;
-        font: 14px/1.2 "PT Sans Narrow";
+        font: 15px/1.2 "PT Sans Narrow";
         letter-spacing: 0.7px;
         color: #888;
         word-break: break-all; }
@@ -298,7 +384,7 @@ figure {
         position: absolute;
         bottom: 0;
         left: 42%;
-        font: 12px/1.2 "PT Sans Narrow";
+        font: 14px/1.2 "PT Sans Narrow";
         letter-spacing: 1px;
         color: #555; }
     .youtube .inner .frame article .inner .pic {
@@ -327,7 +413,6 @@ figure {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 3px solid #111;
     width: 65%;
     height: 65%; }
   .youtube .inner .pop span {

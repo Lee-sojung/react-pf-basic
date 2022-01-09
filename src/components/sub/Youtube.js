@@ -8,6 +8,7 @@
 // import { longArrowAltRight } from "@fortawesome/free-regular-svg-icons";
 import axios from "axios";
 import { useEffect, useState } from 'react';
+const path = process.env.PUBLIC_URL;
 
 function Youtube() {
     let [data, setData] = useState([]);
@@ -72,7 +73,8 @@ function Youtube() {
 
     function Pop() {
         return (
-            <aside className="pop">
+            <aside className="pop" >
+
                 <iframe
                     src={"https://www.youtube.com/embed/" + data[index].snippet.resourceId.videoId} width='100%' height='100%' allowFullScreen>
                 </iframe>
