@@ -117,7 +117,7 @@ function Community() {
                 <div className="newsletter">
                     <img className="letter" src={path + "/img/newsletter.jpeg"} />
                     <div className="letter_txt">
-                        <span>NEWS LETTER</span>
+                        <span>NEWSLETTER</span>
                         <h1>THE LATEST NEWS FROM THE<br/>MAGAZINE</h1>
 
                         <button>Subscribe</button>
