@@ -65,7 +65,7 @@ function Community() {
                     <div className="b_box">
                         <img className="b_pic" src={path + "/img/bg.jpg"} />
                         <h2>
-                            The opening of the flagship store is meaningful in that it serves as an important opportunity to deepen the link between Louis Vuitton and Korean culture.</h2>
+                            The opening of the flagship store is meaningful in that it serves as an important opportunity to deepen the link between <br/>Louis Vuitton and Korean culture</h2>
                     </div>
 
                 </div>
