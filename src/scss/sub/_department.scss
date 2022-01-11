@@ -1,0 +1,28 @@
+.department{
+    .inner{
+        h1{
+            a{
+                font: normal 80px/1 "PT Sans Narrow";
+                color: #333;
+            }
+            &::after{
+                content: "";
+                display: block;
+                width: 68%;
+                height: 1px;
+                background: #555;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+        }
+        p{
+            font: 16px/1.3 "PT Sans Narrow";
+            color: #555;
+            margin: 0 auto;
+            width: 450px;
+            word-wrap: break-word;
+            letter-spacing: 1px;
+            margin-bottom: 150px;
+        }
+    }
+}
