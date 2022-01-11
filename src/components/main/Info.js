@@ -117,7 +117,7 @@ function Info() {
                         <div className="sec5_txt">
                             <h2>EILEEN GU and Twisted</h2>
                             <p>
-                                Freeski champion Eileen Gu is presenting this season's redesigned Louis Vuitton Twisted Bag at the Messner Mountain Museum Corones in the Dolomites, Italy.<br/>
+                                Freeski champion Eileen Gu is presenting this season's redesigned Louis Vuitton Twisted Bag at the Messner Mountain Museum Corones in the Dolomites, Italy.<br />
 
                                 A perfect embodiment of Twist's bold personality, ski gold medalist Eileen Goo presents a new winter bag at the Corones Messner Mountain Museum. Designed by architect Zaha Hadid, the museum is built on top of a mountain with amazing views of the Dolomite.
                                 Emphasizing the Maison's heritage with the LV Twist lock closure, the Twist is one of Louis Vuitton's most iconic bags
@@ -148,13 +148,29 @@ function Info() {
                     </div>
                 </div>
 
-
                 <div className="sec6">
                     <div className="sec6_box">
-                        <img className="sec6_pic" src={path + "/img/backg.jpeg"} />
-                        <h2>
-                            The opening of the flagship store is meaningful in that it serves as an important opportunity to deepen the link between <br/>Louis Vuitton and Korean culture</h2>
+                        <img className="sec6_pic" src={path + "/img/art_banner.jpg"} />
+                        <div className="sec6_txt">
+                            <h2>Espas Louis Vuitton Seoul: Andy Warhol </h2>
+                            <p>
+                                From October 1, 2021 to February 6, 2022<br /> you can see Andy Warhol's 'Finding Andy' exhibition at Espas Louis Vuitton Seoul.</p>
+                        </div>
+
                     </div>
+
+                </div>
+
+
+                <div className="sec7">
+                    <div className="sec7_txt">
+                        <h1>2020 OSCARS</h1>
+                        <p>Actors including Lea Seydoux, Florence Pugh and Kaitlyn Dever of 'Little Women' wear Louis Vuitton's custom dresses and Louis Vuitton's fine jewelry collection, the 92nd Attended the Academy Awards and the Vanity Fair Oscar Party.<br/>
+
+                        <br/>The bespoke red carpet costumes worn by the actors at the ceremony were handcrafted by artisans in the Atelier Rare & Exceptionnel, a symbol of Louis Vuitton's historic savoir-faire, especially in Florence. The collection of fine jewelery worn by Pue was completed in the Maison's high jewelery haute joaillerie by Vendôme, based on the artistry and skill of Louis Vuitton artisans</p>
+                        <button>READ MORE</button>
+                    </div>
+                    <img className="sec7_pic" src={path + "/img/section7.png"} />
 
                 </div>
             </div>
