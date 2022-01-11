@@ -15,6 +15,7 @@ function Info() {
                         </button>
                     </div>
                 </div>
+
                 <div className="sec1_txt1">
                     <span>September 13 - November 25</span>
                     <h1>WHAT'S NEW<br />
@@ -22,6 +23,7 @@ function Info() {
                         LOUIS VUITTON COLLECTION<br />
                         2021-2022  </h1>
                 </div>
+
                 <div className="sec1_txt2">
                     <span>September 13 - Novembert25</span>
                     <h1>WHAT'S NEW<br />
@@ -30,6 +32,7 @@ function Info() {
                         2021-2022  </h1>
 
                 </div>
+
                 <div className="sec1_txt3">
                     <h2>HOLIDAY HOUSE "THE SNOW"</h2>
                     <p>A winter wonderland unfolds before your eyes. Shop the latest clothing, shoes, accessories and snow masks for the winter season.</p>
@@ -38,9 +41,11 @@ function Info() {
                     <span>2021 - 2022 WINTER COLLECTION</span>
 
                 </div>
+
                 <div className="vivi">
                     <img className="txt3_pic" src={path + "/img/holiday2.jpg"} />
                 </div>
+
                 <div className="sec2">
                     <div className="sec2_box">
                         <video className="sec2_pic" src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/GFhNpFePph_HD.mp4" muted autoPlay controls loop />
@@ -65,14 +70,14 @@ function Info() {
                             Like an unforgettable chorus emanating from alluring love and secret senses, a fragrance that offers a hypnotic rapture.</p>
                     </div>
                     <div className="sec2_box">
-                        <video className="sec2_pic" src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/JLfnFzrW00_HD.mp4" muted loop autoPlay controls/>
+                        <video className="sec2_pic" src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/JLfnFzrW00_HD.mp4" muted loop autoPlay controls />
                         <span>2021 - 2022 COLLECTION</span>
                         <h2>LV VOLT COLLECTION</h2>
                         <p>
                             Louis Vuitton's women's fine jewelery collection, created by the hands of a senior jeweler. Our signature line of earrings, necklaces, pendants, bracelets and rings are crafted from precious metals, carefully selected jewels and dazzling diamonds by our masters.</p>
                     </div>
                     <div className="sec2_box">
-                        <video className="sec2_pic" src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/5Af2MsyaHd_HD.mp4" muted  loop autoPlay controls/>
+                        <video className="sec2_pic" src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/5Af2MsyaHd_HD.mp4" muted loop autoPlay controls />
                         <span>2021 - 2022 COLLECTION</span>
                         <h2>MLV Aerogram</h2>
                         <p>Aerogram lines featuring sharp lines and modern details. Notice the Damier checkerboard print of wild animals with pastel-tinted details that look like passport stamps.</p>
@@ -87,21 +92,73 @@ function Info() {
                 </div>
 
                 <div className="sec3">
-                    <div className="sec3_pic">
-                        <img className="sec3_box" src={path + "/img/Nomades.jpg"} />
-                    </div>
+                    <h1>OBJECT NOMAD AT HOME</h1>
                     <div className="sec3_txt">
-                        <h2>OBJETS NOMADES</h2>
+                        <p>The beauty of the finest materials, the flexibility of form, the perfect balance, exquisite craftsmanship and passion for detail.
+                            With the introduction of new augmented reality AR technology, you can now easily visualize and enjoy your object nomad collection in 3D at home. Click the AR icon to embark on a new visual journey.</p>
+                        <button>READ MORE</button>
+                    </div>
+
+                </div>
+
+                <div className="sec4">
+                    <div className="sec4_pic">
+                        <img className="sec4_box" src={path + "/img/Nomades.jpg"} />
+                    </div>
+                    <div className="sec4_txt">
+                        <h2>OBJECTS NOMADES</h2>
                         <p>Since 2012, Louis Vuitton has invited renowned designers from all over the world to imagine experimental and functional furniture pieces and design objects from the Objet Nomad Collection. From hammocks to folding chairs, armchairs and insect screens, each limited-edition object transcends the boundaries of leather, demonstrating intricate craftsmanship and the Maison's interest in creative innovation. The collection pays tribute to Louis Vuitton's past special orders, such as the iconic bed trunk created in 1874 for the French explorer Pierre Sabourgnan de Brazza, while also celebrating the challenging contemporary visions of a diverse group of international designers.</p>
-                        <button>MORE</button>
+                    </div>
+                </div>
+
+                <div className="sec5">
+                    <div className="sec5_box1">
+                        <img className="sec5_pic1" src={path + "/img/recentnews1.jpeg"} />
+                        <div className="sec5_txt">
+                            <h2>EILEEN GU and Twisted</h2>
+                            <p>
+                                Freeski champion Eileen Gu is presenting this season's redesigned Louis Vuitton Twisted Bag at the Messner Mountain Museum Corones in the Dolomites, Italy.<br/>
+
+                                A perfect embodiment of Twist's bold personality, ski gold medalist Eileen Goo presents a new winter bag at the Corones Messner Mountain Museum. Designed by architect Zaha Hadid, the museum is built on top of a mountain with amazing views of the Dolomite.
+                                Emphasizing the Maison's heritage with the LV Twist lock closure, the Twist is one of Louis Vuitton's most iconic bags
+                            </p>
+                            <button>MORE</button>
+                        </div>
+
+                    </div>
+                    <div className="sec5_box2">
+                        <img className="sec5_pic2" src={path + "/img/recentnews2.jpeg"} />
+                        <div className="sec5_txt2">
+                            <h2>Louis Vuitton inniere</h2>
+                            <p>Built in the style of the Eiffel Tower, the workshops are still seasoned by skilled craftsmen, producing all kinds of trunks, leather goods, bespoke pieces and more.Through the exhibition, creative trunks are on display.</p>
+                            <button>MORE</button>
+                        </div>
+
+                    </div>
+                    <div className="sec5_box3">
+                        <img className="sec5_pic3" src={path + "/img/recentnews3.jpeg"} />
+                        <div className="sec5_txt3">
+                            <h2>LV Ski Collection</h2>
+                            <p>
+                                Style meets performance.
+                                The LV Ski Collection is designed with comfort in mind, without compromising style or technical details, allowing you to get the most out of your snow at the highest speeds.</p>
+                            <button>MORE</button>
+                        </div>
+
                     </div>
                 </div>
 
 
+                <div className="sec6">
+                    <div className="sec6_box">
+                        <img className="sec6_pic" src={path + "/img/backg.jpeg"} />
+                        <h2>
+                            The opening of the flagship store is meaningful in that it serves as an important opportunity to deepen the link between <br/>Louis Vuitton and Korean culture</h2>
+                    </div>
 
-
+                </div>
             </div>
-        </section>
+        </section >
     )
 }
 
