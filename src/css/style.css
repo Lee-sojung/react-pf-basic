@@ -39,7 +39,11 @@ header {
           display: inline-block;
           padding: 22px 30px;
           font: normal 13px/1 "Dosis";
-          color: #777; }
+          color: #777;
+          transition: 0.5s; }
+          header .inner #gnb li a:hover {
+            color: #111;
+            font-weight: bold; }
 
 main {
   padding: 100px 0px; }
@@ -54,16 +58,54 @@ main {
 
 footer {
   width: 100%;
-  border-top: 1px solid #555;
-  padding: 50px 0; }
+  border-top: 1px solid #333;
+  padding: 50px 0;
+  background: #333; }
   footer .inner {
     width: 1180px;
     margin: 0 auto;
-    text-align: center; }
-    footer .inner p {
-      font: 12px/1 "arial";
-      color: #888;
-      text-align: center; }
+    text-align: center;
+    position: relative; }
+    footer .inner > h1 {
+      cursor: pointer;
+      font: bold 20px/1 "arial";
+      color: #fff;
+      text-align: left;
+      opacity: 0.7; }
+      footer .inner > h1::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+        height: 1px;
+        background: #ddd;
+        margin-bottom: 30px;
+        opacity: 0.2; }
+    footer .inner > input {
+      width: 150px;
+      height: 25px;
+      background: none;
+      position: absolute;
+      right: 120px;
+      top: 0; }
+    footer .inner > button {
+      width: 100px;
+      height: 25px;
+      background: none;
+      font: 13px/1 "arial";
+      color: #fff;
+      opacity: 0.7;
+      position: absolute;
+      right: 0;
+      top: 0; }
+    footer .inner > span {
+      cursor: pointer;
+      font: 15px/1 "arial";
+      color: #fff;
+      opacity: 0.7;
+      margin-right: 97px; }
+      footer .inner > span:last-child {
+        margin-right: 0px; }
 
 @media screen and (max-width: 1179px) {
   header .inner {
@@ -78,7 +120,7 @@ footer {
     main .inner {
       width: 100%; }
 
-  footer .inner {
+  footer > .inner {
     width: 100%; } }
 figure {
   margin: 0 auto;
@@ -106,7 +148,7 @@ figure {
       content: "";
       display: block;
       width: 1px;
-      height: 100%;
+      height: 97.7%;
       background: #555; }
     #info .inner .sec1 {
       width: 100%;

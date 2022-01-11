@@ -167,7 +167,7 @@ function Info() {
                         <h1>2020 OSCARS</h1>
                         <p>Actors including Lea Seydoux, Florence Pugh and Kaitlyn Dever of 'Little Women' wear Louis Vuitton's custom dresses and Louis Vuitton's fine jewelry collection, the 92nd Attended the Academy Awards and the Vanity Fair Oscar Party.<br/>
 
-                        <br/>The bespoke red carpet costumes worn by the actors at the ceremony were handcrafted by artisans in the Atelier Rare & Exceptionnel, a symbol of Louis Vuitton's historic savoir-faire, especially in Florence. The collection of fine jewelery worn by Pue was completed in the Maison's high jewelery haute joaillerie by Vendôme, based on the artistry and skill of Louis Vuitton artisans</p>
+                        <br/>The bespoke red carpet costumes worn by the actors at the ceremony were handcrafted by artisans in the Atelier Rare & Exceptionnel, a symbol of Louis Vuitton's historic savoir-faire, especially in Florence. The collection of fine jewelery worn by Pue was completed in the Maison's high jewelery haute joaillerie by Vendôme, based on the artistry and skill of Louis Vuitton artisans.</p>
                         <button>READ MORE</button>
                     </div>
                     <img className="sec7_pic" src={path + "/img/section7.png"} />
