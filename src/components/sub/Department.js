@@ -39,7 +39,7 @@ function Department() {
                                 Nicolas Ghesquière built a reputation as one of the most sought-after and influential designers of her time.<br />
 
                                 In November 2014, his first year at Louis Vuitton, he was awarded the Wall Street Journal Fashion Innovator of the Year award, and in December he was awarded the British Fashion Awards.Award) for Best International Designer.
-                                I am especially grateful to the people who work with me.</p>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -48,8 +48,53 @@ function Department() {
                     <img className="ceo_msg" src={path + "/img/ceo_letter.jpeg"} />
                     <div className="msg">
                         <h2>A message from Nicolas Ghesquière</h2>
-                        <p>Thank you to everyone who helped me tell a new story and helped make Louis Vuitton<br/> what it is today, especially those who work with me. I would like to express my gratitude to everyone<br/> who has been with me this morning, right here, in this moment.</p>
+                        <p>Thank you to everyone who helped me tell a new story and helped make Louis Vuitton<br /> what it is today, especially those who work with me. I would like to express my gratitude to everyone<br /> who has been with me this morning, right here, in this moment.</p>
                         <span>- Nicolas Ghesquière, March 5, 2021 -</span>
+                    </div>
+
+                </div>
+
+                <div className="member_txt">
+                    <h1>DESIGNER</h1>
+                    <div className="mem_txt">
+                        <p>Designers from around the world including India Mahdavi, Marcel Wanders, Patricia Urquiola, Campana Brothers, Atelier Oï, and many more The most famous designers created the Louis Vuitton object Nomad.</p>
+                    </div>
+
+                </div>
+
+                <div className="about_member">
+
+                    <div className="member">
+                        <img className="mem" src={path + "/img/member1.jpg"} />
+                        <span>MARCEL WANDERS STUDIO</span>
+                    </div>
+                    <div className="member">
+                        <img className="mem" src={path + "/img/member2.jpg"} />
+                        <span>CAMPANA BROTHERS</span>
+                    </div>
+                    <div className="member">
+                        <img className="mem" src={path + "/img/member3.jpg"} />
+                        <span>FRANK CHOU</span>
+                    </div>
+                    <div className="member">
+                        <img className="mem" src={path + "/img/member4.jpg"} />
+                        <span>PATRICIA URQUIOLA</span>
+                    </div>
+                    <div className="member">
+                        <img className="mem" src={path + "/img/member5.jpg"} />
+                        <span>ATELIER OÏ</span>
+                    </div>
+                    <div className="member">
+                        <img className="mem" src={path + "/img/member6.jpg"} />
+                        <span>RAW EDGES</span>
+                    </div>
+                    <div className="member">
+                        <img className="mem" src={path + "/img/member7.jpg"} />
+                        <span>INDIA MAHDAVI</span>
+                    </div>
+                    <div className="member">
+                        <img className="mem" src={path + "/img/member8.jpg"} />
+                        <span>ANDREW KUDLESS</span>
                     </div>
 
                 </div>
