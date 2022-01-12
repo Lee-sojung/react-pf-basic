@@ -8,7 +8,7 @@ function Header(){
                 <h1> <NavLink exact to="/">REACT PORTFOLIO</NavLink> </h1>
 
                 <ul id="gnb">
-                    <li><NavLink activeStyle={active} exact to="/department">DEPARTMENT</NavLink></li>
+                    <li><NavLink activeStyle={active} exact to="/department">ABOUT</NavLink></li>
                     <li><NavLink activeStyle={active} exact to="/community">COMMUNITY</NavLink></li>
                     <li><NavLink activeStyle={active} exact to="/gallery">GALLERY</NavLink></li>
                     <li><NavLink activeStyle={active} exact to="/youtube">YOUTUBE</NavLink></li>
