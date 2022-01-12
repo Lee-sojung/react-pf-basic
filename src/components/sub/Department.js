@@ -18,7 +18,7 @@ function Department() {
     return (
         <main className="about">
             <div className="inner">
-                <h1><a href="#">ABOUT US</a></h1>
+                <h1><a href="#">ABOUT</a></h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>
 
                 <div className="about_vid">
@@ -54,10 +54,52 @@ function Department() {
 
                 </div>
 
+                <div className="show_txt">
+                    <h1>Louis Vuitton 2022<br /> Spring-Summer Women's Show</h1>
+                    <div className="sh_txt">
+                        <p>" I wanted to tackle the concepts of time and clothing.<br /> In addition, timelessness and the core concept of the Maison are also included. "</p>
+                        <span>- Nicolas Ghesquière</span>
+                    </div>
+
+                </div>
+
+                <div className="show">
+                    <div className="preview">
+                        <img className="sh" src={path + "/img/ss22_1.jpeg"} />
+                    </div>
+                    <div className="preview">
+                        <img className="sh" src={path + "/img/ss22_2.jpeg"} />
+                    </div>
+                    <div className="preview">
+                        <video className="sh" src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/b6YXgiCaiO_HD.mp4" muted autoPlay loop />
+                    </div>
+                    <div className="preview">
+                        <video className="sh" src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/mUGummaa22_HD.mp4" muted autoPlay loop />
+                    </div>
+                    <div className="preview">
+                        <img className="sh" src={path + "/img/ss22_4.jpeg"} />
+                    </div>
+                    <div className="preview">
+                        <img className="sh" src={path + "/img/ss22_5.jpeg"} />
+                    </div>
+                    <div className="preview">
+                        <img className="sh" src={path + "/img/ss22_6.jpeg"} />
+                    </div>
+                </div>
+                <div className="preview_txt">
+                        <div className="look">
+                            <h1>LOOK HIGHLIGHT</h1>
+                            <p>
+                                A yearning for transmission. The Louis Vuitton Spring-Summer 2022 Women's Collection is an invitation to the le grand bal of time.<br /> Time itself is not that important. At the same time, time is everything. Time deconstructs function and meaning, uniting costumes.<br /> The day turns into night, and the simple clothes transform into luxury. Right now, from yesterday to today, clothes play their role as messengers.<br /> The experience of wearing clothes and the voice handed down. Being one step ahead at the forefront of the countdown is a mix of ever-changing and creative generations.
+                            </p>
+                        </div>
+                    </div>
+
+
                 <div className="member_txt">
-                    <h1>DESIGNER</h1>
+                    <h1>OBJECT NOMAD DESIGNER</h1>
                     <div className="mem_txt">
-                        <p>Designers from around the world including India Mahdavi, Marcel Wanders, Patricia Urquiola, Campana Brothers, Atelier Oï, and many more The most famous designers created the Louis Vuitton object Nomad.</p>
+                        <p>Designers from around the world including India Mahdavi,<br /> Marcel Wanders, Patricia Urquiola, Campana Brothers, Atelier Oï, <br />and many more The most famous designers created the Louis Vuitton object Nomad.</p>
                     </div>
 
                 </div>
@@ -113,7 +155,7 @@ function Department() {
                     })
                 } */}
             </div>
-        </main>
+        </main >
     )
 }
 export default Department;
