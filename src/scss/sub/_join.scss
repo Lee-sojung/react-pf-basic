@@ -1,0 +1,20 @@
+.join{
+    .inner{
+        h1{
+            a{
+                font: normal 80px/1 "PT Sans Narrow";
+                color: #333;
+            }       
+
+            &::after{
+                content: "";
+                display: block;
+                width: 68%;
+                height: 1px;
+                background: #555;
+                margin-top: 20px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
