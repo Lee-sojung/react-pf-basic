@@ -1,17 +1,41 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
-ul,ol {
-    list-style: none;
+ul,
+ol {
+	list-style: none;
 }
 a {
-    text-decoration: none;
-    outline: 0;
+	text-decoration: none;
+	outline: 0;
 }
 
-body{
-    background: #efefef;
-    // background: #e2e1df;
+body {
+	background: url(../../public/img/main_bg.jpg)no-repeat;
+	background-size: cover;
+	// background: #efefef;
+	// background: #e2e1df;
+}
+.h {
+	position: absolute;
+	top: -99999px;
+	opacity: 0;
+}
+label,
+input {
+	vertical-align: middle;
+}
+table {
+	border-collapse: collapse;
+	border: none;
+
+	th,
+	td {
+		border: none;
+	}
+}
+fieldset {
+	border: none;
 }

@@ -41,10 +41,23 @@
                 >input{
                     width: 150px;
                     height: 25px ;
+                    font-size: 13px;
+                    
                 }
                 >button{
+                    border: none;
+                    border: 1px solid #333;
                     width: 80px;
                     height: 25px;
+                    font: normal 13px/1 "PT Sans Narrow";
+                    transition: 0.5s;
+                    border-radius: 3px;
+                    letter-spacing: 0.5px;
+
+                    &:hover{
+                        color: #fff;
+                        background: #333;
+                    }
                 }
                 >a{
                     border: 1px solid #333;
@@ -80,22 +93,54 @@
                 }
 			}
 
-			.branch li {
-                background: #fff;
-                text-align: center;
-                border-top: 1px solid #333;
-                padding: 32.5px;
-				width: 100%;
-				color: #333;
-				cursor: pointer;
-                transition: 0.5s;
+            .lo_scroll{
+                height: 254px;
+                overflow-y: scroll;
 
-				&.on {
-                    background: #333;
-					color: #fff;
-                    border-top: 1px solid #fff;
-				}
-			}
+                .branch li {
+                    font: normal 14px/1 "맑은 고딕";
+                    letter-spacing: 0.5px;
+                    background: #fff;
+                    text-align: center;
+                    border-top: 1px solid #333;
+                    padding: 20px;
+                    width: 100%;
+                    color: #333;
+                    cursor: pointer;
+                    transition: 0.5s;
+
+                    >p{
+                        margin-top: 5px;
+                        font: normal 12px/1 "arial";
+                        letter-spacing: 0.5px;
+                    }
+                    >button{
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid #333;
+                        margin-top: 10px;
+                        font: normal 13px/1 "PT Sans Narrow";
+                        color: #555;
+                        letter-spacing: 0.5px;
+                        padding-bottom: 5px;
+                    }
+
+                    &.on {
+                        background: #333;
+                        color: #fff;
+                        border-top: 1px solid #fff;
+
+                        >button{
+                            color: #ccc;
+                            border-bottom: 1px solid #ccc;
+                        }
+
+                    }
+                }
+
+                    
+            }
+
 		}
 
 		> h1 {
