@@ -90,7 +90,7 @@ function Department() {
                         <div className="look">
                             <h1>LOOK HIGHLIGHT</h1>
                             <p>
-                                A yearning for transmission. The Louis Vuitton Spring-Summer 2022 Women's Collection is an invitation to the le grand bal of time.<br /> Time itself is not that important. At the same time, time is everything. Time deconstructs function and meaning, uniting costumes.<br /> The day turns into night, and the simple clothes transform into luxury. Right now, from yesterday to today, clothes play their role as messengers.<br /> The experience of wearing clothes and the voice handed down. Being one step ahead at the forefront of the countdown is a mix of ever-changing and creative generations.
+                                A yearning for transmission. The Louis Vuitton Spring-Summer 2022 Women's Collection is an invitation to the le grand bal of time.<br /> Time itself is not that important. At the same time, time is everything. Time deconstructs function and meaning, uniting costumes.<br /> The day turns into night, and the simple clothes transform into luxury. Right now, from yesterday to today, clothes play their role as messengers.<br /> The experience of wearing clothes and the voice handed down. Being one step ahead at the forefront of the countdown is a mix of ever-changing and creative.
                             </p>
                         </div>
                     </div>
