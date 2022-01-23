@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 function Join() {
+    const frame = useRef(null);
     const initVal = {
         userid: "",
         pwd1: "",
@@ -84,6 +85,7 @@ function Join() {
 
 
     useEffect(() => {
+        frame.current.classList.add('on');
         console.log(err);
         const len = Object.keys(err).length;
         if (len === 0 && isSubmit) {
@@ -97,7 +99,7 @@ function Join() {
     }, [err]);
 
     return (
-        <main className="join">
+        <main className="join" ref={frame}>
             <div className="inner">
                 <h1><a href="#">JOIN</a></h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>

@@ -7,10 +7,11 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { longArrowAltRight } from "@fortawesome/free-regular-svg-icons";
 import axios from "axios";
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 const path = process.env.PUBLIC_URL;
 
 function Youtube() {
+    const frame = useRef(null);
     let [data, setData] = useState([]);
     let [isPop, setIsPop] = useState(false);
     let [index, setIndex] = useState(0);
@@ -21,6 +22,7 @@ function Youtube() {
     const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${api_key}&playlistId=${playListId}&maxResults=${num}`;
 
     useEffect(() => {
+        frame.current.classList.add('on');
         axios
             .get(url)
             .then(json => {
@@ -30,7 +32,7 @@ function Youtube() {
     }, []);
 
     return (
-        <main className="youtube">
+        <main className="youtube" ref={frame}>
             <div className="inner">
                 <h1><a href="#">YOUTUBE</a></h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>

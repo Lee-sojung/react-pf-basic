@@ -7,6 +7,7 @@ const path = process.env.PUBLIC_URL;
 
 
 function Gallery() {
+    const frame = useRef(null);
     let [items, setItems] = useState([]);
     //팝업 생성 관리할 state생성
     let [isPop, setIsPop] = useState(false);
@@ -22,6 +23,7 @@ function Gallery() {
     const url = `https://www.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=${api_key}&per_page=20&format=json&nojsoncallback=1`;
 
     useEffect(() => {
+        frame.current.classList.add('on');
         axios
             .get(url)
             .then(json => {
@@ -30,7 +32,7 @@ function Gallery() {
     }, []);
 
     return (
-        <main className="gallery">
+        <main className="gallery" ref={frame}>
             <div className="inner">
                 <h1 onClick={() => {
                     if (enableClick && !interest) { //모션이 끝났고 현재 interest값이 true가 아닐때 interst호출 기능 실행

@@ -1,14 +1,16 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect,useRef, useState } from "react";
 
 const path = process.env.PUBLIC_URL;
 
 function Community() {
+    const frame = useRef(null);
     let [posts, setPosts] = useState([]);
     const path = process.env.PUBLIC_URL;
     const url = `${path}/db/community.json`;
 
     useEffect(() => {
+        frame.current.classList.add('on');
         axios
             .get(url)
             .then(json => {
@@ -18,7 +20,7 @@ function Community() {
     }, []);
 
     return (
-        <main className="community">
+        <main className="community" ref={frame}>
             <div className="inner">
                 <h1><a href="#">COMMUNITY</a></h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>

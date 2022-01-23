@@ -1,13 +1,15 @@
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 
 function Department() {
+    const frame = useRef(null);
     let [posts, setPosts] = useState([]);
     const path = process.env.PUBLIC_URL;
     const url = `${path}/db/about.json`;
 
     useEffect(() => {
+        frame.current.classList.add('on');
         axios
             .get(url)
             .then(json => {
@@ -16,7 +18,7 @@ function Department() {
             })
     }, []);
     return (
-        <main className="about">
+        <main className="about" ref={frame}>
             <div className="inner">
                 <h1><a href="#">ABOUT</a></h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>

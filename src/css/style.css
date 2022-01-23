@@ -67,7 +67,13 @@ header {
             font-weight: bold; }
 
 main {
-  padding: 100px 0px; }
+  padding: 100px 0px;
+  transition: 1s;
+  opacity: 0;
+  transform: translateY(100px); }
+  main.on {
+    opacity: 1;
+    transform: translateY(0px); }
   main > .inner {
     width: 1180px;
     min-height: 500px;
