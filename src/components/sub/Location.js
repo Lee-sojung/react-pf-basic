@@ -58,6 +58,7 @@ function Location() {
     const [mapInfo, setMapInfo] = useState(info);
 
     useEffect(() => {
+        container.current.innerHTML='';
         frame.current.classList.add('on');
         const options = {
             center: mapInfo[index].latlng,
@@ -90,7 +91,7 @@ function Location() {
 
         return () => {
             window.removeEventListener('resize', mapSet);
-            container.current.innerHTML = "";
+            // container.current.innerHTML = "";
         }
 
     }, [index]);

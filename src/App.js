@@ -1,5 +1,5 @@
 import './css/style.css';
-import {Route} from 'react-router-dom';
+import {Route,Switch} from 'react-router-dom';
 //import common component
 import Header from './components/common/Header.js';
 import Footer from './components/common/Footer.js';
@@ -7,6 +7,7 @@ import Footer from './components/common/Footer.js';
 //import main component
 import Visual from './components/main/Visual.js';
 import Info from './components/main/Info.js';
+import Main from './components/main/Main.js';
 
 //import sub component
 import Department from './components/sub/Department.js';

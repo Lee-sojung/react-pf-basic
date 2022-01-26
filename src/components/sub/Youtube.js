@@ -31,46 +31,51 @@ function Youtube() {
             })
     }, []);
 
+
+
     return (
-        <main className="youtube" ref={frame}>
-            <div className="inner">
-                <h1><a href="#">YOUTUBE</a></h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>
+        <>
+            <main className="youtube" ref={frame}>
+                <div className="inner">
+                    <h1><a href="#">YOUTUBE</a></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>
 
-                <section className="frame">
-                    {
-                        data.map((item, index) => {
-                            let tit = item.snippet.title;
-                            let tit_len = tit.length;
-                            let desc = item.snippet.description;
-                            let desc_len = desc.length;
+                    <section className="frame">
+                        {
+                            data.map((item, index) => {
+                                let tit = item.snippet.title;
+                                let tit_len = tit.length;
+                                let desc = item.snippet.description;
+                                let desc_len = desc.length;
 
-                            return (
-                                <article key={index}>
-                                    <div className="inner">
-                                        < div className="txt">
-                                            {/*?전으로는 조건식 참이면 ?뒤에 실행 거짓이먄 ?뒤에 무시하고 :이후 실행*/}
-                                            <h2>{(tit_len > 35) ? tit = tit.substr(0, 35) + "..." : tit}</h2>
-                                            <p>{(desc_len > 250) ? desc = desc.substr(0, 250) + "..." : desc}</p>
-                                            <span><a href="#">VIEW VIDEO</a></span>
-                                        </ div>
-                                        <div className="pic" onClick={() => {
-                                            setIsPop(true);
-                                            setIndex(index);
-                                        }}>
-                                            <img src={item.snippet.thumbnails.medium.url} />
+                                return (
+                                    <article key={index}>
+                                        <div className="inner">
+                                            < div className="txt">
+                                                {/*?전으로는 조건식 참이면 ?뒤에 실행 거짓이먄 ?뒤에 무시하고 :이후 실행*/}
+                                                <h2>{(tit_len > 35) ? tit = tit.substr(0, 35) + "..." : tit}</h2>
+                                                <p>{(desc_len > 250) ? desc = desc.substr(0, 250) + "..." : desc}</p>
+                                                <span><a href="#">VIEW VIDEO</a></span>
+                                            </ div>
+                                            <div className="pic" onClick={() => {
+                                                setIsPop(true);
+                                                setIndex(index);
+                                            }}>
+                                                <img src={item.snippet.thumbnails.medium.url} />
+                                            </div>
                                         </div>
-                                    </div>
-                                </article>
-                            )
-                        })
-                    }
-                </section>
+                                    </article>
+                                )
+                            })
+                        }
+                    </section>
 
-                {isPop ? <Pop /> : null}
 
-            </div>
-        </main>
+
+                </div>
+            </main>
+            {isPop ? <Pop /> : null}
+        </>
     )
 
     function Pop() {

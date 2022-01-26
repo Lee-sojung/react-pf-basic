@@ -4,49 +4,51 @@ function Info() {
     return (
         <section id="info">
             <div className="inner">
-                <div className="sec1">
-                    <h2>LOUIS VUITTON ACTIVITY</h2>
-                    <div className="sec1_pic">
-                        {/* <img className="sec1_pic1" src={path + "/img/snow1.jpeg"} /> */}
-                        <video className="sec1_pic1" src="https://kr.louisvuitton.com/content/dam/lv/online/high-end/unisex/U_Holiday_Landing_Page_v2.html/jcr:content/assets/videos/desktop/SKI.mp4" muted autoPlay loop />
-                        <button>
-                            <img className="btn1" src={path + "/img/button.png"} />
-                            <span>-THE SNOW-<br /> VIEW MORE</span>
-                        </button>
+                <div className="myScroll">
+                    <div className="sec1">
+                        <h2>LOUIS VUITTON ACTIVITY</h2>
+                        <div className="sec1_pic">
+                            {/* <img className="sec1_pic1" src={path + "/img/snow1.jpeg"} /> */}
+                            <video className="sec1_pic1" src="https://kr.louisvuitton.com/content/dam/lv/online/high-end/unisex/U_Holiday_Landing_Page_v2.html/jcr:content/assets/videos/desktop/SKI.mp4" muted autoPlay loop />
+                            <button>
+                                <img className="btn1" src={path + "/img/button.png"} />
+                                <span>-THE SNOW-<br /> VIEW MORE</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div className="sec1_txt1">
+                        <span>September 13 - November 25</span>
+                        <h1>WHAT'S NEW<br />
+                            HOLIDAY "THE SNOW"<br />
+                            LOUIS VUITTON COLLECTION<br />
+                            2021-2022  </h1>
+                    </div>
+
+                    <div className="sec1_txt2">
+                        <span>September 13 - Novembert25</span>
+                        <h1>WHAT'S NEW<br />
+                            HOLIDAY LOUIS VUITTON<br />
+                            "THE VIVIENNE HOUSE"
+                            2021-2022  </h1>
+
+                    </div>
+
+                    <div className="sec1_txt3">
+                        <h2>HOLIDAY HOUSE "THE SNOW"</h2>
+                        <p>A winter wonderland unfolds before your eyes. Shop the latest clothing, shoes, accessories and snow masks for the winter season.</p>
+                        <h2>HOLIDAY HOUSE "THE VIVIENNE HOUSE" </h2>
+                        <p>The pure smiles and facial expressions of young children. Meet with Vivienne, the Maison's mascot, in the Louis Vuitton House holiday campaign. We offer a gift that will last a lifetime.</p>
+                        <span>2021 - 2022 WINTER COLLECTION</span>
+
                     </div>
                 </div>
 
-                <div className="sec1_txt1">
-                    <span>September 13 - November 25</span>
-                    <h1>WHAT'S NEW<br />
-                        HOLIDAY "THE SNOW"<br />
-                        LOUIS VUITTON COLLECTION<br />
-                        2021-2022  </h1>
-                </div>
-
-                <div className="sec1_txt2">
-                    <span>September 13 - Novembert25</span>
-                    <h1>WHAT'S NEW<br />
-                        HOLIDAY LOUIS VUITTON<br />
-                        "THE VIVIENNE HOUSE"
-                        2021-2022  </h1>
-
-                </div>
-
-                <div className="sec1_txt3">
-                    <h2>HOLIDAY HOUSE "THE SNOW"</h2>
-                    <p>A winter wonderland unfolds before your eyes. Shop the latest clothing, shoes, accessories and snow masks for the winter season.</p>
-                    <h2>HOLIDAY HOUSE "THE VIVIENNE HOUSE" </h2>
-                    <p>The pure smiles and facial expressions of young children. Meet with Vivienne, the Maison's mascot, in the Louis Vuitton House holiday campaign. We offer a gift that will last a lifetime.</p>
-                    <span>2021 - 2022 WINTER COLLECTION</span>
-
-                </div>
-
-                <div className="vivi">
+                <div className="vivi myScroll" >
                     <img className="txt3_pic" src={path + "/img/holiday2.jpg"} />
                 </div>
 
-                <div className="sec2">
+                <div className="sec2 myScroll">
                     <div className="sec2_box">
                         <video className="sec2_pic" src="https://lv-vod.fl.freecaster.net/vod/louisvuitton/GFhNpFePph_HD.mp4" muted autoPlay controls loop />
                         <span>2021 - 2022 COLLECTION</span>
@@ -91,7 +93,7 @@ function Info() {
                     </div>
                 </div>
 
-                <div className="sec3">
+                <div className="sec3 myScroll">
                     <h1>OBJECT NOMAD AT HOME</h1>
                     <div className="sec3_txt">
                         <p>The beauty of the finest materials, the flexibility of form, the perfect balance, exquisite craftsmanship and passion for detail.
@@ -101,7 +103,7 @@ function Info() {
 
                 </div>
 
-                <div className="sec4">
+                <div className="sec4 myScroll">
                     <div className="sec4_pic">
                         <img className="sec4_box" src={path + "/img/Nomades.jpg"} />
                     </div>
@@ -111,7 +113,7 @@ function Info() {
                     </div>
                 </div>
 
-                <div className="sec5">
+                <div className="sec5 myScroll">
                     <div className="sec5_box1">
                         <img className="sec5_pic1" src={path + "/img/recentnews1.jpeg"} />
                         <div className="sec5_txt">
@@ -148,7 +150,7 @@ function Info() {
                     </div>
                 </div>
 
-                <div className="sec6">
+                <div className="sec6 myScroll">
                     <div className="sec6_box">
                         <img className="sec6_pic" src={path + "/img/art_banner.jpg"} />
                         <div className="sec6_txt">
@@ -162,12 +164,12 @@ function Info() {
                 </div>
 
 
-                <div className="sec7">
+                <div className="sec7 myScroll">
                     <div className="sec7_txt">
                         <h1>2020 OSCARS</h1>
-                        <p>Actors including Lea Seydoux, Florence Pugh and Kaitlyn Dever of 'Little Women' wear Louis Vuitton's custom dresses and Louis Vuitton's fine jewelry collection, the 92nd Attended the Academy Awards and the Vanity Fair Oscar Party.<br/>
+                        <p>Actors including Lea Seydoux, Florence Pugh and Kaitlyn Dever of 'Little Women' wear Louis Vuitton's custom dresses and Louis Vuitton's fine jewelry collection, the 92nd Attended the Academy Awards and the Vanity Fair Oscar Party.<br />
 
-                        <br/>The bespoke red carpet costumes worn by the actors at the ceremony were handcrafted by artisans in the Atelier Rare & Exceptionnel, a symbol of Louis Vuitton's historic savoir-faire, especially in Florence. The collection of fine jewelery worn by Pue was completed in the Maison's high jewelery haute joaillerie by Vendôme, based on the artistry and skill of Louis Vuitton artisans.</p>
+                            <br />The bespoke red carpet costumes worn by the actors at the ceremony were handcrafted by artisans in the Atelier Rare & Exceptionnel, a symbol of Louis Vuitton's historic savoir-faire, especially in Florence. The collection of fine jewelery worn by Pue was completed in the Maison's high jewelery haute joaillerie by Vendôme, based on the artistry and skill of Louis Vuitton artisans.</p>
                         <button>READ MORE</button>
                     </div>
                     <img className="sec7_pic" src={path + "/img/section7.png"} />

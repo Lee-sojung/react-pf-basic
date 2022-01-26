@@ -17,7 +17,7 @@
 				margin-bottom: 30px;
 			}
 		}
-		>p {
+		> p {
 			font: 16px/1.3 "PT Sans Narrow";
 			color: #555;
 			margin: 0 auto;
@@ -26,129 +26,241 @@
 			letter-spacing: 1px;
 			margin-bottom: 150px;
 		}
-		.tbox {
-			width: 68%;
-			height: 100%;
-			padding: 12px 0px;
-			border-top: 1px solid #555;
 
-            >strong {
-                width: 10%;
-                font: normal 15px/35px "PT Sans Narrow";
-                color: #333;
-                float: left;
-                text-align: left;
-            }
-            >h2 {
-                width: 65%;
-                font: normal 15px/35px "PT Sans Narrow";
-                color: #333;
-                float: left;
-                letter-spacing: 0.5px;
-                text-align: center;
-            }
-            >span {
-                width: 10%;
-                font: normal 15px/35px "PT Sans Narrow";
-                color: #333;
-                float: left;
-                letter-spacing: 0.5px;
-                margin-left: 10px;
-            }
-            >em {
-                width: 10%;
-                font: normal 15px/35px "PT Sans Narrow";
-                color: #333;
-                float: right;
-                text-align: center;
-            }
-		}
-		>article {
+		.inputBox {
 			width: 68%;
+			padding: 30px 50px;
+			margin-bottom: 30px;
+			border: 1px solid #aaa;
 			position: relative;
-			padding: 30px 0px;
 
-			>.left {
-				cursor: pointer;
+			> input {
 				width: 100%;
-				height: 100%;
-				padding: 12px 0px;
-				border-top: 1px solid #555;
-				float: left;
-                text-align: left;
-
-				strong {
-                    margin-left: 10px;
-					width: 10%;
-					font: normal 17px/35px "PT Sans Narrow";
-					color: #555;
-					float: left;
-				}
-				> h2 {
-					width: 65%;
-					font: normal 17px/35px "PT Sans Narrow";
-					color: #555;
-					float: left;
-					letter-spacing: 0.5px;
-				}
-				>span {
-					width: 10%;
-					font: normal 17px/35px "PT Sans Narrow";
-					color: #555;
-					float: left;
-					letter-spacing: 0.5px;
-				}
-				>em {
-					width: 10%;
-					font: normal 17px/35px "PT Sans Narrow";
-					color: #555;
-					float: right;
-				}
-
-				&:hover {
-					background: rgba(180, 171, 157, 0.274);
-				}
+				padding: 5px 10px;
+				border: 1px solid #aaa;
+				background: none;
+				margin-bottom: 10px;
+				font: bold 15px/1 "Rajdhani";
+				color: #333;
+				letter-spacing: 0.5px;
 			}
-		}
-		//페이지네이션
-		.pagination{
-			width: 68%;
-			position: relative;
-			.numbers{
+			> textarea {
 				width: 100%;
-				float: left;
+				padding: 10px;
+				border: 1px solid #aaa;
+				background: none;
+				margin-bottom: 15px;
+				resize: none;
+				font: bold 15px/1 "Rajdhani";
+				letter-spacing: 0.5px;
+				color: #333;
+			}
+			> .btn {
 				text-align: center;
-				margin-top: 20px;
-				>button{
-					width: 20px; height: 20px;
-					margin-right: 20px;
-					font:normal 13px/10px "PT Sans Narrow";
+				> button {
+					font: bold 15px/1 "Rajdhani";
+					width: 150px;
+					height: 30px;
+					border: 1px solid #aaa;
 					color: #555;
-					background: none;
-					border: 1px solid #555;
+					margin-right: 20px;
+					transition: 0.5s;
 
-					&:hover{
-						background:rgba(180, 171, 157, 0.274);
-						border: none;
-						color: #333;
-						font-size: 15px;
-					}
-
-					&:last-child{
-						margin-right: 0;
+					&:hover {
+						background: #555;
+						color: #fff;
 					}
 				}
 			}
-			&::before{
-				position: absolute;
-				top: 30px;
-				content: "";
-				display: block;
+		}
+		.showBox {
+			width: 68%;
+			height: 380px;
+			padding: 30px 50px;
+			border: 1px solid #aaa;
+			overflow-y: scroll;
+
+			article {
 				width: 100%;
-				height:1px;
-				background: #555;
+				padding: 30px 40px;
+				background: #ffffffc9;
+				margin-bottom: 20px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-content: center;
+
+				.post {
+					width: 70%;
+
+					> h2 {
+						font: bold 18px/1 "Rajdhani";
+						letter-spacing: 1px;
+						color: #555;
+						margin-bottom: 5px;
+					}
+					> p {
+						font: 14px/1.2 "Rajdhani";
+						letter-spacing: 0.5px;
+						color: #777;
+					}
+					> input {
+						width: 90%;
+						padding: 5px 10px;
+						border: 1px solid #555;
+						background: #efefef;
+						margin-bottom: 5px;
+					}
+					> textarea {
+						width: 90%;
+						padding: 10px;
+						border: 1px solid #555;
+						background: #efefef;
+						resize: none;
+					}
+				}
+				.btns {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					li {
+						cursor: pointer;
+						margin: 5px;
+						border: none;
+						background: none;
+						font: 12px/1 "arial";
+						color: #555;
+
+						&:nth-of-type(2) {
+							color: rgb(190, 1, 1);
+						}
+					}
+				}
 			}
 		}
+		// .tbox {
+		// 	width: 68%;
+		// 	height: 100%;
+		// 	padding: 12px 0px;
+		// 	border-top: 1px solid #555;
+
+		//     >strong {
+		//         width: 10%;
+		//         font: normal 15px/35px "PT Sans Narrow";
+		//         color: #333;
+		//         float: left;
+		//         text-align: left;
+		//     }
+		//     >h2 {
+		//         width: 65%;
+		//         font: normal 15px/35px "PT Sans Narrow";
+		//         color: #333;
+		//         float: left;
+		//         letter-spacing: 0.5px;
+		//         text-align: center;
+		//     }
+		//     >span {
+		//         width: 10%;
+		//         font: normal 15px/35px "PT Sans Narrow";
+		//         color: #333;
+		//         float: left;
+		//         letter-spacing: 0.5px;
+		//         margin-left: 10px;
+		//     }
+		//     >em {
+		//         width: 10%;
+		//         font: normal 15px/35px "PT Sans Narrow";
+		//         color: #333;
+		//         float: right;
+		//         text-align: center;
+		//     }
+		// }
+		// >article {
+		// 	width: 68%;
+		// 	position: relative;
+		// 	padding: 30px 0px;
+
+		// 	>.left {
+		// 		cursor: pointer;
+		// 		width: 100%;
+		// 		height: 100%;
+		// 		padding: 12px 0px;
+		// 		border-top: 1px solid #555;
+		// 		float: left;
+		//         text-align: left;
+
+		// 		strong {
+		//             margin-left: 10px;
+		// 			width: 10%;
+		// 			font: normal 17px/35px "PT Sans Narrow";
+		// 			color: #555;
+		// 			float: left;
+		// 		}
+		// 		> h2 {
+		// 			width: 65%;
+		// 			font: normal 17px/35px "PT Sans Narrow";
+		// 			color: #555;
+		// 			float: left;
+		// 			letter-spacing: 0.5px;
+		// 		}
+		// 		>span {
+		// 			width: 10%;
+		// 			font: normal 17px/35px "PT Sans Narrow";
+		// 			color: #555;
+		// 			float: left;
+		// 			letter-spacing: 0.5px;
+		// 		}
+		// 		>em {
+		// 			width: 10%;
+		// 			font: normal 17px/35px "PT Sans Narrow";
+		// 			color: #555;
+		// 			float: right;
+		// 		}
+
+		// 		&:hover {
+		// 			background: rgba(180, 171, 157, 0.274);
+		// 		}
+		// 	}
+		// }
+		// //페이지네이션
+		// .pagination{
+		// 	width: 68%;
+		// 	position: relative;
+		// 	.numbers{
+		// 		width: 100%;
+		// 		float: left;
+		// 		text-align: center;
+		// 		margin-top: 20px;
+		// 		>button{
+		// 			width: 20px; height: 20px;
+		// 			margin-right: 20px;
+		// 			font:normal 13px/10px "PT Sans Narrow";
+		// 			color: #555;
+		// 			background: none;
+		// 			border: 1px solid #555;
+
+		// 			&:hover{
+		// 				background:rgba(180, 171, 157, 0.274);
+		// 				border: none;
+		// 				color: #333;
+		// 				font-size: 15px;
+		// 			}
+
+		// 			&:last-child{
+		// 				margin-right: 0;
+		// 			}
+		// 		}
+		// 	}
+		// 	&::before{
+		// 		position: absolute;
+		// 		top: 30px;
+		// 		content: "";
+		// 		display: block;
+		// 		width: 100%;
+		// 		height:1px;
+		// 		background: #555;
+		// 	}
+		// }
 
 		//right pic
 		.right {
@@ -167,31 +279,33 @@
 				object-fit: cover;
 				margin-top: 30px;
 				width: 100%;
-                height: 240px;
+				height: 245px;
 				filter: grayscale(1);
 			}
 		}
 
 		//배너
-		.banner{
-			padding: 150px 0 100px;
+		.banner {
+			padding: 100px 0 100px;
 			width: 100%;
-			.b_box{
-				width: 100%; height: 300px;
+			.b_box {
+				width: 100%;
+				height: 300px;
 				background-color: #efefef;
 				position: relative;
-				.b_pic{
-					width: 100%; height: 300px;
+				.b_pic {
+					width: 100%;
+					height: 300px;
 					object-fit: cover;
 					opacity: 0.7;
-					
 				}
-				>h2{
+				> h2 {
 					font: bold 24px/1.3 "PT Sans Narrow";
 					opacity: 0.7;
 					color: #333;
 					position: absolute;
-					top: 50%; left: 50%;
+					top: 50%;
+					left: 50%;
 					transform: translate(-50%, -50%);
 					text-align: center;
 					letter-spacing: 0.8px;
@@ -200,46 +314,48 @@
 		}
 
 		//뉴스박스
-		.news_box{
+		.news_box {
 			position: relative;
 			width: 100%;
 			height: 412px;
-			
+
 			&::after {
 				content: "";
 				display: block;
 				clear: both;
 			}
-			.n_box1{
+			.n_box1 {
 				float: left;
 				width: 412px;
-				.n_pic1{
+				.n_pic1 {
 					width: 100%;
 					object-fit: cover;
-					filter: grayscale(1);opacity: 0.9;
+					filter: grayscale(1);
+					opacity: 0.9;
 					transition: 1s;
 
-					&:hover{
+					&:hover {
 						filter: grayscale(0);
 					}
 				}
-				.txt_box{
+				.txt_box {
 					width: 250px;
 					position: absolute;
-					top: 0%; left: 442px;
-					>h2{
+					top: 0%;
+					left: 442px;
+					> h2 {
 						font: bold 19px/35px "PT Sans Narrow";
 						color: #333;
 						letter-spacing: 0.5px;
 					}
-					>p{
+					> p {
 						margin-top: 10px;
 						font: normal 15px/1.4 "PT Sans Narrow";
 						letter-spacing: 0.3px;
 						color: #555;
 						word-break: break-all;
 					}
-					>button{
+					> button {
 						cursor: pointer;
 						color: #333;
 						margin-top: 15px;
@@ -248,82 +364,85 @@
 						background: none;
 					}
 				}
-		
 			}
-			.n_box2{
+			.n_box2 {
 				position: absolute;
 				right: 236px;
 				float: right;
 				width: 206px;
-				.n_pic2{
+				.n_pic2 {
 					width: 100%;
 					object-fit: cover;
 					filter: grayscale(1);
 					transition: 1s;
 
-					&:hover{
+					&:hover {
 						filter: grayscale(0);
 					}
 				}
-				>h2{
-					margin-top: 10px;
-					font: bold 19px/1.2 "PT Sans Narrow";
-					color: #333;
-					letter-spacing: 0.5px;
-				}
-				>p{
-					margin-top: 10px;
-					font: normal 15px/1.4 "PT Sans Narrow";
-					letter-spacing: 0.3px;
-					color: #555;
-					word-break: break-all;
-				}
-				>button{
-					cursor: pointer;
-					color: #333;
-					margin-top: 15px;
-					border: none;
-					font: normal 15px/1.4 "PT Sans Narrow";
-					background: none;
+				.txt_box2 {
+					> h2 {
+						margin-top: 10px;
+						font: bold 19px/1.2 "PT Sans Narrow";
+						color: #333;
+						letter-spacing: 0.5px;
+					}
+					> p {
+						margin-top: 10px;
+						font: normal 15px/1.4 "PT Sans Narrow";
+						letter-spacing: 0.3px;
+						color: #555;
+						word-break: break-all;
+					}
+					> button {
+						cursor: pointer;
+						color: #333;
+						margin-top: 15px;
+						border: none;
+						font: normal 15px/1.4 "PT Sans Narrow";
+						background: none;
+					}
 				}
 			}
-			.n_box3{
+			.n_box3 {
 				float: right;
 				width: 206px;
-				.n_pic3{
+				.n_pic3 {
 					width: 100%;
 					object-fit: cover;
 					filter: grayscale(1);
 					transition: 1s;
 
-					&:hover{
+					&:hover {
 						filter: grayscale(0);
 					}
 				}
-				>h2{
-					margin-top: 10px;
-					font: bold 19px/1.2 "PT Sans Narrow";
-					color: #333;
-					letter-spacing: 0.5px;
-				}
-				>p{
-					margin-top: 10px;
-					font: normal 15px/1.4 "PT Sans Narrow";
-					letter-spacing: 0.3px;
-					color: #555;
-					word-break: break-all;
-				}
-				>button{
-					cursor: pointer;
-					color: #333;
-					margin-top: 15px;
-					border: none;
-					font: normal 15px/1.4 "PT Sans Narrow";
-					background: none;
+				.txt_box3 {
+					> h2 {
+						margin-top: 10px;
+						font: bold 19px/1.2 "PT Sans Narrow";
+						color: #333;
+						letter-spacing: 0.5px;
+					}
+					> p {
+						margin-top: 10px;
+						font: normal 15px/1.4 "PT Sans Narrow";
+						letter-spacing: 0.3px;
+						color: #555;
+						word-break: break-all;
+					}
+					> button {
+						cursor: pointer;
+						color: #333;
+						margin-top: 15px;
+						border: none;
+						font: normal 15px/1.4 "PT Sans Narrow";
+						background: none;
+					}
 				}
 			}
 
-			&::after{
+			&::after {
 				content: "";
 				display: block;
 				width: 100%;
@@ -335,48 +454,50 @@
 		}
 
 		//open
-		.opening{
+		.opening {
 			position: relative;
 			padding: 100px 0px;
-			width: 100%; 
-	
+			width: 100%;
+
 			&::after {
 				content: "";
 				display: block;
 				clear: both;
 			}
-			.open{
+			.open {
 				position: relative;
 				float: left;
 				width: 700px;
-				
-				.open_box{
-					width: 100%; height: 300px;
-					object-fit: cover;	filter: grayscale(1);		
+
+				.open_box {
+					width: 100%;
+					height: 300px;
+					object-fit: cover;
+					filter: grayscale(1);
 					transition: 1s;
 
-					&:hover{
+					&:hover {
 						filter: grayscale(0);
 					}
 				}
 			}
-			.open_txt{
+			.open_txt {
 				float: right;
 				width: 442px;
 
-				>h2{
+				> h2 {
 					font: bold 19px/35px "PT Sans Narrow";
 					color: #333;
 					letter-spacing: 0.5px;
 				}
-				>p{
+				> p {
 					margin-top: 10px;
 					font: normal 15px/1.4 "PT Sans Narrow";
 					letter-spacing: 0.3px;
 					color: #555;
 					word-break: break-all;
 				}
-				>button{
+				> button {
 					cursor: pointer;
 					color: #333;
 					margin-top: 15px;
@@ -384,9 +505,8 @@
 					font: normal 15px/1.4 "PT Sans Narrow";
 					background: none;
 				}
-				
 			}
-			&::before{
+			&::before {
 				content: "";
 				display: block;
 				width: 100%;
@@ -398,36 +518,36 @@
 		}
 
 		//뉴스레터
-		.newsletter{
+		.newsletter {
 			position: relative;
 			padding: 30px 0px;
 			width: 100%;
-			.letter{
-				width: 100%; 
+			.letter {
+				width: 100%;
 				height: 350px;
 				object-fit: cover;
 				filter: grayscale(1);
-				
 			}
-			.letter_txt{
+			.letter_txt {
 				text-align: center;
-				width: 100%; height: 100%;
+				width: 100%;
+				height: 100%;
 				position: absolute;
-				top: 24%; left: 0;
+				top: 24%;
+				left: 0;
 
-				>h1{
+				> h1 {
 					margin-top: 22px;
 					font: bold 24px/1.3 "PT Sans Narrow";
 					color: #555;
 					letter-spacing: 0.5px;
 				}
-				>span{
-
+				> span {
 					font: normal 15px/1 "PT Sans Narrow";
 					color: #888;
 					letter-spacing: 0.5px;
 				}
-				>button{
+				> button {
 					width: 150px;
 					height: 40px;
 					cursor: pointer;
@@ -441,21 +561,871 @@
 					transition: 1s;
 					background: none;
 
-					&:hover{
+					&:hover {
 						color: #fff;
 						border: none;
 						background: #333;
 					}
 				}
-				p{
+				p {
 					margin-top: 20px;
 					font: normal 18px/1 "PT Sans Narrow";
 					letter-spacing: 0.5px;
 					color: #555;
 				}
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 1179px) {
+	.community {
+		.inner {
+			position: relative;
+
+			//배너
+			.banner {
+				.b_box {
+					> h2 {
+						font: bold 22px/1.3 "PT Sans Narrow";
+					}
+				}
+			}
+			//뉴스박스
+			.news_box {
+				height: 412px;
+
+				&::after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+				.n_box1 {
+					float: left;
+					width: 45%;
+					.n_pic1 {
+						height: 400px;
+						filter: brightness(0.2) grayscale(1);
+
+						&:hover {
+							filter: grayscale(1) brightness(0.2);
+						}
+					}
+					.txt_box {
+						text-align: center;
+						width: 30%;
+						position: absolute;
+						top: 10%;
+						left: 7.5%;
+						> h2 {
+							font: bold 19px/35px "PT Sans Narrow";
+							color: #fff;
+							letter-spacing: 0.5px;
+						}
+						> p {
+							font: normal 14px/1.4 "PT Sans Narrow";
+							color: #ddd;
+						}
+						> button {
+							color: #fff;
+						}
+					}
+				}
+				.n_box2 {
+					position: absolute;
+					right: 26%;
+					float: right;
+					width: 24%;
+					.n_pic2 {
+						width: 100%;
+						height: 206px;
+						object-fit: cover;
+						filter: grayscale(1);
+						transition: 1s;
+
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+					.txt_box2 {
+						> h2 {
+							margin-top: 10px;
+							font: bold 19px/1.2 "PT Sans Narrow";
+							color: #333;
+							letter-spacing: 0.5px;
+						}
+						> p {
+							margin-top: 10px;
+							font: normal 14px/1.4 "PT Sans Narrow";
+							letter-spacing: 0.3px;
+							color: #555;
+							word-break: break-all;
+						}
+						> button {
+							cursor: pointer;
+							color: #333;
+							margin-top: 15px;
+							border: none;
+							font: normal 15px/1.4 "PT Sans Narrow";
+							background: none;
+						}
+					}
+				}
+				.n_box3 {
+					float: right;
+					width: 24%;
+					.n_pic3 {
+						width: 100%;
+						height: 206px;
+						object-fit: cover;
+						filter: grayscale(1);
+						transition: 1s;
+
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+					.txt_box3 {
+						> h2 {
+							margin-top: 10px;
+							font: bold 19px/1.2 "PT Sans Narrow";
+							color: #333;
+							letter-spacing: 0.5px;
+						}
+						> p {
+							margin-top: 10px;
+							font: normal 14px/1.4 "PT Sans Narrow";
+							letter-spacing: 0.3px;
+							color: #555;
+							word-break: break-all;
+						}
+						> button {
+							cursor: pointer;
+							color: #333;
+							margin-top: 15px;
+							border: none;
+							font: normal 15px/1.4 "PT Sans Narrow";
+							background: none;
+						}
+					}
+				}
+
+				&::after {
+					content: "";
+					display: block;
+					width: 100%;
+					height: 1px;
+					background: #ccc;
+					position: absolute;
+					bottom: -50px;
+				}
+			}
+
+			//open
+			.opening {
+				position: relative;
+				padding: 100px 0px;
+				width: 100%;
+
+				&::after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+				.open {
+					position: relative;
+					float: left;
+					width: 55%;
+
+					.open_box {
+						width: 100%;
+						height: 300px;
+						object-fit: cover;
+						filter: grayscale(1);
+						transition: 1s;
+
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+				}
+				.open_txt {
+					float: right;
+					width: 40%;
+
+					> h2 {
+						font: bold 19px/35px "PT Sans Narrow";
+						color: #333;
+						letter-spacing: 0.5px;
+					}
+					> p {
+						margin-top: 10px;
+						font: normal 15px/1.4 "PT Sans Narrow";
+						letter-spacing: 0.3px;
+						color: #555;
+						word-break: break-all;
+					}
+					> button {
+						cursor: pointer;
+						color: #333;
+						margin-top: 15px;
+						border: none;
+						font: normal 15px/1.4 "PT Sans Narrow";
+						background: none;
+					}
+				}
+				&::before {
+					content: "";
+					display: block;
+					width: 100%;
+					height: 1px;
+					background: #ccc;
+					position: absolute;
+					bottom: 50px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 744px) {
+	.community {
+		.inner {
+			position: relative;
+
+			.inputBox {
+				width: 100%;
+				position: relative;
+				> .btn {
+					width: 100%;
+					> button {
+						font: bold 15px/1 "Rajdhani";
+						width: 150px;
+						height: 30px;
+						border: 1px solid #aaa;
+						color: #555;
+						margin-right: 20px;
+						transition: 0.5s;
+						&:last-child {
+							margin-right: 0px;
+						}
+
+						&:hover {
+							background: #555;
+							color: #fff;
+						}
+					}
+				}
+			}
+			.showBox {
+				width: 100%;
+				margin-bottom: 60px;
+
+				article {
+					width: 100%;
+					padding: 30px 40px;
+					background: #ffffffc9;
+					margin-bottom: 20px;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-content: center;
+
+					.post {
+						width: 70%;
+
+						> h2 {
+							font: bold 18px/1 "Rajdhani";
+							letter-spacing: 1px;
+							color: #555;
+							margin-bottom: 5px;
+						}
+						> p {
+							font: 14px/1.2 "Rajdhani";
+							letter-spacing: 0.5px;
+							color: #777;
+						}
+						> input {
+							width: 90%;
+							padding: 5px 10px;
+							border: 1px solid #555;
+							background: #efefef;
+							margin-bottom: 5px;
+						}
+						> textarea {
+							width: 90%;
+							padding: 10px;
+							border: 1px solid #555;
+							background: #efefef;
+							resize: none;
+						}
+					}
+					.btns {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						li {
+							cursor: pointer;
+							margin: 5px;
+							border: none;
+							background: none;
+							font: 12px/1 "arial";
+							color: #555;
+
+							&:nth-of-type(2) {
+								color: rgb(190, 1, 1);
+							}
+						}
+					}
+				}
+			}
+
+			//right pic
+			.right {
+				width: 100%;
+				float: none;
+				position: relative;
+				display: flex;
+				top: 0px;
+				right: 0;
+				.pic1 {
+					width: 48%;
+					height: 300px;
+					object-fit: cover;
+					filter: grayscale(1);
+					margin-right: 4%;
+				}
+				.pic2 {
+					object-fit: cover;
+					margin-top: 0px;
+					width: 48%;
+					height: 300px;
+					filter: grayscale(1);
+				}
+			}
+
+			//배너
+			.banner {
+				padding: 100px 0 80px;
+				.b_box {
+					height: 200px;
+					.b_pic {
+						height: 200px;
+					}
+					> h2 {
+						width: 80%;
+						font: bold 18px/1.3 "PT Sans Narrow";
+					}
+				}
+			}
+			//뉴스박스
+			.news_box {
+				position: relative;
+				width: 100%;
+				height: 100%;
+
+				.n_box1 {
+					position: relative;
+					float: none;
+					width: 100%;
+					height: 100%;
+					margin-bottom: 70px;
+
+					.n_pic1 {
+						width: 100%;
+						height: 206px;
+						object-fit: cover;
+						filter: grayscale(1);
+						opacity: 0.9;
+						transition: 1s;
+
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+					.txt_box {
+						width: 100%;
+						position: relative;
+						top: 0%;
+						left: 0;
+
+						> h2 {
+							font: bold 19px/35px "PT Sans Narrow";
+							color: #333;
+							letter-spacing: 0.5px;
+						}
+						> p {
+							text-align: left;
+							margin-top: 10px;
+							font: normal 14px/1.4 "PT Sans Narrow";
+							letter-spacing: 0.3px;
+							color: #555;
+							word-break: break-all;
+						}
+						> button {
+							position: absolute;
+							left: 0px;
+							cursor: pointer;
+							color: #333;
+							margin-top: 15px;
+							border: none;
+							font: normal 15px/1.4 "PT Sans Narrow";
+							background: none;
+						}
+					}
+				}
+				.n_box2 {
+					position: relative;
+					right: 0px;
+					float: none;
+					width: 100%;
+					margin-bottom: 35px;
+					.n_pic2 {
+						width: 100%;
+						object-fit: cover;
+						filter: grayscale(1);
+						transition: 1s;
+
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+					.txt_box2 {
+						> p {
+							font: normal 14px/1.4 "PT Sans Narrow";
+						}
+					}
+				}
+				.n_box3 {
+					position: relative;
+					float: none;
+					width: 100%;
+					.n_pic3 {
+						width: 100%;
+						object-fit: cover;
+						filter: grayscale(1);
+						transition: 1s;
+
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+					.txt_box3 {
+						> p {
+							font: normal 14px/1.4 "PT Sans Narrow";
+						}
+					}
+				}
+			}
+
+			//open
+			.opening {
+				padding: 110px 0px 100px;
+
+				.open {
+					position: relative;
+					float: left;
+					width: 100%;
+				}
+				.open_txt {
+					float: none;
+					width: 100%;
+
+					> p {
+						margin-top: 10px;
+						font: normal 14px/1.4 "PT Sans Narrow";
+						letter-spacing: 0.3px;
+						color: #555;
+						word-break: break-all;
+					}
+				}
+				&::before {
+					content: "";
+					display: block;
+					width: 100%;
+					height: 1px;
+					background: #ccc;
+					position: absolute;
+					bottom: 50px;
+				}
+			}
+
+			//뉴스레터
+			.newsletter {
+				position: relative;
+				padding: 10px 0px;
+				width: 100%;
+				.letter {
+					width: 100%;
+					height: 300px;
+					object-fit: cover;
+					filter: grayscale(1);
+				}
+				.letter_txt {
+					text-align: center;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 22%;
+					left: 0;
+
+					> h1 {
+						margin-top: 20px;
+						font: bold 20px/1.3 "PT Sans Narrow";
+						color: #555;
+						letter-spacing: 0.5px;
+					}
+					> span {
+						font: normal 15px/1 "PT Sans Narrow";
+						color: #888;
+						letter-spacing: 0.5px;
+					}
+					> button {
+						width: 120px;
+						height: 30px;
+						cursor: pointer;
+						color: #333;
+						margin-top: 5px;
+						border: none;
+						font: bold 15px/1 "PT Sans Narrow";
+						letter-spacing: 1px;
+						// background: #333;
+						border: 1px solid #333;
+						transition: 1s;
+						background: none;
+
+						&:hover {
+							color: #fff;
+							border: none;
+							background: #333;
+						}
+					}
+					p {
+						margin-top: 20px;
+						font: normal 16px/1 "PT Sans Narrow";
+						letter-spacing: 0.5px;
+						color: #555;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 539px) {
+	.community {
+		.inner {
+			position: relative;
+
+			.inputBox {
+				width: 100%;
+				position: relative;
+				> .btn {
+					width: 100%;
+					> button {
+						font: bold 13px/1 "Rajdhani";
+						width: 120px;
+						height: 30px;
+						border: 1px solid #aaa;
+						color: #555;
+						margin-right: 20px;
+						transition: 0.5s;
+						&:last-child {
+							margin-right: 0px;
+						}
+
+						&:hover {
+							background: #555;
+							color: #fff;
+						}
+					}
+				}
+			}
+			.showBox {
+				width: 100%;
+
+				article {
+					width: 100%;
+					padding: 30px 40px;
+					background: #ffffffc9;
+					margin-bottom: 20px;
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-content: center;
+
+					.post {
+						width: 70%;
+
+						> h2 {
+							font: bold 18px/1 "Rajdhani";
+							letter-spacing: 1px;
+							color: #555;
+							margin-bottom: 5px;
+						}
+						> p {
+							font: 14px/1.2 "Rajdhani";
+							letter-spacing: 0.5px;
+							color: #777;
+						}
+						> input {
+							width: 90%;
+							padding: 5px 10px;
+							border: 1px solid #555;
+							background: #efefef;
+							margin-bottom: 5px;
+						}
+						> textarea {
+							width: 90%;
+							padding: 10px;
+							border: 1px solid #555;
+							background: #efefef;
+							resize: none;
+						}
+					}
+					.btns {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						li {
+							cursor: pointer;
+							margin: 5px;
+							border: none;
+							background: none;
+							font: 12px/1 "arial";
+							color: #555;
+
+							&:nth-of-type(2) {
+								color: rgb(190, 1, 1);
+							}
+						}
+					}
+				}
+			}
 
 
+			//right pic
+			.right {
+				display:block;
+				.pic1 {
+					width: 100%;
+					height: 250px;
+					object-fit: cover;
+					filter: grayscale(1);
+					margin-right: 20px;
+				}
+				.pic2 {
+					object-fit: cover;
+					margin-top: 20px;
+					width: 100%;
+					height: 250px;
+					filter: grayscale(1);
+				}
+			}
+
+			//배너
+			.banner {
+				padding: 60px 0 60px;
+				.b_box {
+					height: 200px;
+					.b_pic {
+						height: 200px;
+					}
+					> h2 {
+						width: 80%;
+						font: bold 18px/1.3 "PT Sans Narrow";
+					}
+				}
+			}
+			//뉴스박스
+			.news_box {
+				position: relative;
+				width: 100%;
+				height: 100%;
+
+				.n_box1 {
+					position: relative;
+					float: none;
+					width: 100%;
+					height: 100%;
+					margin-bottom: 70px;
+
+					.n_pic1 {
+						width: 100%;
+						height: 206px;
+						object-fit: cover;
+						filter: grayscale(1);
+						opacity: 0.9;
+						transition: 1s;
+
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+					.txt_box {
+						width: 100%;
+						position: relative;
+						top: 0%;
+						left: 0;
+
+						> h2 {
+							font: bold 19px/35px "PT Sans Narrow";
+							color: #333;
+							letter-spacing: 0.5px;
+						}
+						> p {
+							text-align: left;
+							margin-top: 10px;
+							font: normal 14px/1.4 "PT Sans Narrow";
+							letter-spacing: 0.3px;
+							color: #555;
+							word-break: break-all;
+						}
+						> button {
+							position: absolute;
+							left: 0px;
+							cursor: pointer;
+							color: #333;
+							margin-top: 15px;
+							border: none;
+							font: normal 15px/1.4 "PT Sans Narrow";
+							background: none;
+						}
+					}
+				}
+				.n_box2 {
+					position: relative;
+					right: 0px;
+					float: none;
+					width: 100%;
+					margin-bottom: 35px;
+					.n_pic2 {
+						width: 100%;
+						object-fit: cover;
+						filter: grayscale(1);
+						transition: 1s;
+
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+					.txt_box2 {
+						> p {
+							font: normal 14px/1.4 "PT Sans Narrow";
+						}
+					}
+				}
+				.n_box3 {
+					position: relative;
+					float: none;
+					width: 100%;
+					.n_pic3 {
+						width: 100%;
+						object-fit: cover;
+						filter: grayscale(1);
+						transition: 1s;
+
+						&:hover {
+							filter: grayscale(0);
+						}
+					}
+					.txt_box3 {
+						> p {
+							font: normal 14px/1.4 "PT Sans Narrow";
+						}
+					}
+				}
+			}
+
+			//open
+			.opening {
+				padding: 110px 0px 100px;
+
+				.open {
+					position: relative;
+					float: left;
+					width: 100%;
+				}
+				.open_txt {
+					float: none;
+					width: 100%;
+
+					> p {
+						margin-top: 10px;
+						font: normal 14px/1.4 "PT Sans Narrow";
+						letter-spacing: 0.3px;
+						color: #555;
+						word-break: break-all;
+					}
+				}
+				&::before {
+					content: "";
+					display: block;
+					width: 100%;
+					height: 1px;
+					background: #ccc;
+					position: absolute;
+					bottom: 50px;
+				}
+			}
+
+			//뉴스레터
+			.newsletter {
+				position: relative;
+				padding: 10px 0px;
+				width: 100%;
+				.letter {
+					width: 100%;
+					height: 300px;
+					object-fit: cover;
+					filter: grayscale(1);
+				}
+				.letter_txt {
+					text-align: center;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 22%;
+					left: 0;
+
+					> h1 {
+						margin-top: 20px;
+						font: bold 20px/1.3 "PT Sans Narrow";
+						color: #555;
+						letter-spacing: 0.5px;
+					}
+					> span {
+						font: normal 15px/1 "PT Sans Narrow";
+						color: #888;
+						letter-spacing: 0.5px;
+					}
+					> button {
+						width: 120px;
+						height: 30px;
+						cursor: pointer;
+						color: #333;
+						margin-top: 5px;
+						border: none;
+						font: bold 15px/1 "PT Sans Narrow";
+						letter-spacing: 1px;
+						// background: #333;
+						border: 1px solid #333;
+						transition: 1s;
+						background: none;
+
+						&:hover {
+							color: #fff;
+							border: none;
+							background: #333;
+						}
+					}
+					p {
+						margin-top: 20px;
+						font: normal 16px/1 "PT Sans Narrow";
+						letter-spacing: 0.5px;
+						color: #555;
+					}
+				}
+			}
 		}
 	}
 }

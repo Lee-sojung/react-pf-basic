@@ -32,105 +32,108 @@ function Gallery() {
     }, []);
 
     return (
-        <main className="gallery" ref={frame}>
-            <div className="inner">
-                <h1 onClick={() => {
-                    if (enableClick && !interest) { //모션이 끝났고 현재 interest값이 true가 아닐때 interst호출 기능 실행
-                        setEnableClick(false);
-                        list.current.classList.remove("on");
-                        setLoading(true);
-
-                        getFlickr({
-                            type: "interest",
-                            count: 500
-                        });
-                    }
-                }}><a href="#">GALLERY</a></h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>
-
-
-                <div className="searchBox">
-                    <input type="text" ref={input} onKeyPress={e => {
-                        const tags = input.current.value;
-
-                        if (e.key !== "Enter" || tags === "") return;
-                        if (enableClick) {
+        <>
+            <main className="gallery" ref={frame}>
+                <div className="inner">
+                    <h1 onClick={() => {
+                        if (enableClick && !interest) { //모션이 끝났고 현재 interest값이 true가 아닐때 interst호출 기능 실행
                             setEnableClick(false);
-                            //검색어 입력하고 엔터키 눌렀을떄 interest값을 false로 변경해 제목클릭가능하게 설정
-                            setInterest(false);
                             list.current.classList.remove("on");
                             setLoading(true);
 
-                            const tags = input.current.value;
-                            input.current.value = "";
-
                             getFlickr({
-                                type: "search",
-                                count: 20,
-                                tags: tags
+                                type: "interest",
+                                count: 500
                             });
                         }
-                    }} />
-                    <button onClick={() => {
-                        if (enableClick) {
+                    }}><a href="#">GALLERY</a></h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>
+
+
+                    <div className="searchBox">
+                        <input type="text" ref={input} onKeyPress={e => {
                             const tags = input.current.value;
-                            if (tags === "") return;
 
-                            setEnableClick(false);
-                            //검색어 버튼 클릭시 interest값을 false로 변경해 제목클릭가능하게 설정
-                            setInterest(false);
-                            list.current.classList.remove("on");
-                            setLoading(true);
+                            if (e.key !== "Enter" || tags === "") return;
+                            if (enableClick) {
+                                setEnableClick(false);
+                                //검색어 입력하고 엔터키 눌렀을떄 interest값을 false로 변경해 제목클릭가능하게 설정
+                                setInterest(false);
+                                list.current.classList.remove("on");
+                                setLoading(true);
+
+                                const tags = input.current.value;
+                                input.current.value = "";
+
+                                getFlickr({
+                                    type: "search",
+                                    count: 20,
+                                    tags: tags
+                                });
+                            }
+                        }} />
+                        <button onClick={() => {
+                            if (enableClick) {
+                                const tags = input.current.value;
+                                if (tags === "") return;
+
+                                setEnableClick(false);
+                                //검색어 버튼 클릭시 interest값을 false로 변경해 제목클릭가능하게 설정
+                                setInterest(false);
+                                list.current.classList.remove("on");
+                                setLoading(true);
 
 
-                            input.current.value = "";
+                                input.current.value = "";
 
-                            getFlickr({
-                                type: "search",
-                                count: 20,
-                                tags: tags
-                            });
+                                getFlickr({
+                                    type: "search",
+                                    count: 20,
+                                    tags: tags
+                                });
+                            }
+                        }}>SEARCH</button>
+                    </div>
+
+                    {(loading) ? <img className="loading" src={path + "/img/loading.gif"} /> : ""}
+
+                    <section className="list">
+                        {
+                            items.map((item, index) => {
+                                const imgSrc = `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`;
+                                let tit = item.title;
+                                let tit_len = item.title.length;
+
+                                return (
+                                    <article key={index}>
+                                        <div className="inner">
+                                            {/*썸네일 클릭시 setIsPop으로 true로 변경 팝업 보임*/}
+                                            <div className="pic" onClick={() => {
+                                                setIsPop(true);
+                                                //버튼 클릭시 index state 변경
+                                                setIndex(index);
+                                            }}>
+                                                <img src={imgSrc} />
+                                            </div>
+                                            <h2>{(tit_len > 40) ? tit.substr(0, 40) + "..." : tit}</h2>
+                                            <strong>{item.owner}</strong>
+                                        </div>
+                                    </article>
+
+                                )
+                            })
                         }
-                    }}>SEARCH</button>
+                    </section>
+
+
+
                 </div>
 
-                {(loading) ? <img className="loading" src={path + "/img/loading.gif"} /> : ""}
 
-                <section className="list">
-                    {
-                        items.map((item, index) => {
-                            const imgSrc = `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`;
-                            let tit = item.title;
-                            let tit_len = item.title.length;
-
-                            return (
-                                <article key={index}>
-                                    <div className="inner">
-                                        {/*썸네일 클릭시 setIsPop으로 true로 변경 팝업 보임*/}
-                                        <div className="pic" onClick={() => {
-                                            setIsPop(true);
-                                            //버튼 클릭시 index state 변경
-                                            setIndex(index);
-                                        }}>
-                                            <img src={imgSrc} />
-                                        </div>
-                                        <h2>{(tit_len > 40) ? tit.substr(0, 40) + "..." : tit}</h2>
-                                        <strong>{item.owner}</strong>
-                                    </div>
-                                </article>
-
-                            )
-                        })
-                    }
-                </section>
-
-
-
-            </div>
+            </main>
             {/* isPop 상태값이 true면 팝업 보임 */}
             {isPop ? <Pop /> : null}
-
-        </main>
+        </>
     )
 
 

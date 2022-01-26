@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Manrope:wght@300&family=PT+Sans+Narrow&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Manrope:wght@300&family=PT+Sans+Narrow&family=Rajdhani&family=Roboto+Condensed&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -125,14 +125,17 @@ footer {
       position: absolute;
       right: 0;
       top: 0; }
-    footer .inner > span {
-      cursor: pointer;
-      font: 15px/1 "arial";
-      color: #fff;
-      opacity: 0.7;
-      margin-right: 97px; }
-      footer .inner > span:last-child {
-        margin-right: 0px; }
+    footer .inner .footer_li {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      footer .inner .footer_li > span {
+        cursor: pointer;
+        font: 15px/1 "arial";
+        color: #fff;
+        opacity: 0.7; }
+        footer .inner .footer_li > span:last-child {
+          margin-right: 0px; }
 
 @media screen and (max-width: 1179px) {
   header .inner {
@@ -148,7 +151,121 @@ footer {
       width: 100%; }
 
   footer > .inner {
-    width: 100%; } }
+    width: 100%;
+    padding: 0 50px; }
+    footer > .inner > h1 {
+      cursor: pointer;
+      font: bold 20px/1 "arial";
+      color: #fff;
+      text-align: left;
+      opacity: 0.7; }
+      footer > .inner > h1::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+        height: 1px;
+        background: #ddd;
+        margin-bottom: 30px;
+        opacity: 0.2; }
+    footer > .inner > input {
+      margin-right: 50px; }
+    footer > .inner > button {
+      right: 50px;
+      top: 0; }
+    footer > .inner .footer_li {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      footer > .inner .footer_li > span {
+        cursor: pointer;
+        font: 15px/1 "arial";
+        color: #fff;
+        opacity: 0.7; } }
+@media screen and (max-width: 744px) {
+  header .inner {
+    width: 100%; }
+    header .inner h1 {
+      left: 3vw; }
+    header .inner #gnb {
+      display: none; }
+
+  main {
+    padding: 80px 40px; }
+    main .inner {
+      width: 100%; }
+
+  footer > .inner {
+    width: 100%;
+    padding: 0 50px; }
+    footer > .inner > h1 {
+      cursor: pointer;
+      font: bold 20px/1 "arial";
+      color: #fff;
+      text-align: left;
+      opacity: 0.7; }
+      footer > .inner > h1::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+        height: 1px;
+        background: #ddd;
+        margin-bottom: 30px;
+        opacity: 0.2; }
+    footer > .inner > input {
+      margin-right: 50px; }
+    footer > .inner > button {
+      right: 50px;
+      top: 0; }
+    footer > .inner .footer_li {
+      width: 100%; }
+      footer > .inner .footer_li > span {
+        font: 12px/1 "arial";
+        margin-right: 0px; } }
+@media screen and (max-width: 539px) {
+  header .inner {
+    width: 100%; }
+    header .inner h1 {
+      left: 3vw; }
+    header .inner #gnb {
+      display: none; }
+
+  main {
+    padding: 80px 40px; }
+    main .inner {
+      width: 100%; }
+
+  footer > .inner {
+    width: 100%;
+    padding: 0 50px; }
+    footer > .inner > h1 {
+      cursor: pointer;
+      font: bold 20px/1 "arial";
+      color: #fff;
+      text-align: left;
+      opacity: 0.7; }
+      footer > .inner > h1::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin-top: 40px;
+        height: 1px;
+        background: #ddd;
+        margin-bottom: 30px;
+        opacity: 0.2; }
+    footer > .inner > input {
+      width: 110px;
+      height: 25px;
+      right: 100px;
+      margin-right: 50px; }
+    footer > .inner > button {
+      width: 90px;
+      height: 25px;
+      background: none;
+      font: 12px/1 "arial"; }
+    footer > .inner .footer_li > span {
+      font: 10px/1 "arial"; } }
 figure {
   margin: 0 auto;
   width: 100%;
@@ -891,105 +1008,95 @@ figure {
     word-wrap: break-word;
     letter-spacing: 1px;
     margin-bottom: 150px; }
-  .community .inner .tbox {
+  .community .inner .inputBox {
     width: 68%;
-    height: 100%;
-    padding: 12px 0px;
-    border-top: 1px solid #555; }
-    .community .inner .tbox > strong {
-      width: 10%;
-      font: normal 15px/35px "PT Sans Narrow";
-      color: #333;
-      float: left;
-      text-align: left; }
-    .community .inner .tbox > h2 {
-      width: 65%;
-      font: normal 15px/35px "PT Sans Narrow";
-      color: #333;
-      float: left;
-      letter-spacing: 0.5px;
-      text-align: center; }
-    .community .inner .tbox > span {
-      width: 10%;
-      font: normal 15px/35px "PT Sans Narrow";
-      color: #333;
-      float: left;
-      letter-spacing: 0.5px;
-      margin-left: 10px; }
-    .community .inner .tbox > em {
-      width: 10%;
-      font: normal 15px/35px "PT Sans Narrow";
-      color: #333;
-      float: right;
-      text-align: center; }
-  .community .inner > article {
-    width: 68%;
-    position: relative;
-    padding: 30px 0px; }
-    .community .inner > article > .left {
-      cursor: pointer;
-      width: 100%;
-      height: 100%;
-      padding: 12px 0px;
-      border-top: 1px solid #555;
-      float: left;
-      text-align: left; }
-      .community .inner > article > .left strong {
-        margin-left: 10px;
-        width: 10%;
-        font: normal 17px/35px "PT Sans Narrow";
-        color: #555;
-        float: left; }
-      .community .inner > article > .left > h2 {
-        width: 65%;
-        font: normal 17px/35px "PT Sans Narrow";
-        color: #555;
-        float: left;
-        letter-spacing: 0.5px; }
-      .community .inner > article > .left > span {
-        width: 10%;
-        font: normal 17px/35px "PT Sans Narrow";
-        color: #555;
-        float: left;
-        letter-spacing: 0.5px; }
-      .community .inner > article > .left > em {
-        width: 10%;
-        font: normal 17px/35px "PT Sans Narrow";
-        color: #555;
-        float: right; }
-      .community .inner > article > .left:hover {
-        background: rgba(180, 171, 157, 0.274); }
-  .community .inner .pagination {
-    width: 68%;
+    padding: 30px 50px;
+    margin-bottom: 30px;
+    border: 1px solid #aaa;
     position: relative; }
-    .community .inner .pagination .numbers {
+    .community .inner .inputBox > input {
       width: 100%;
-      float: left;
-      text-align: center;
-      margin-top: 20px; }
-      .community .inner .pagination .numbers > button {
-        width: 20px;
-        height: 20px;
-        margin-right: 20px;
-        font: normal 13px/10px "PT Sans Narrow";
+      padding: 5px 10px;
+      border: 1px solid #aaa;
+      background: none;
+      margin-bottom: 10px;
+      font: bold 15px/1 "Rajdhani";
+      color: #333;
+      letter-spacing: 0.5px; }
+    .community .inner .inputBox > textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #aaa;
+      background: none;
+      margin-bottom: 15px;
+      resize: none;
+      font: bold 15px/1 "Rajdhani";
+      letter-spacing: 0.5px;
+      color: #333; }
+    .community .inner .inputBox > .btn {
+      text-align: center; }
+      .community .inner .inputBox > .btn > button {
+        font: bold 15px/1 "Rajdhani";
+        width: 150px;
+        height: 30px;
+        border: 1px solid #aaa;
         color: #555;
-        background: none;
-        border: 1px solid #555; }
-        .community .inner .pagination .numbers > button:hover {
-          background: rgba(180, 171, 157, 0.274);
-          border: none;
-          color: #333;
-          font-size: 15px; }
-        .community .inner .pagination .numbers > button:last-child {
-          margin-right: 0; }
-    .community .inner .pagination::before {
-      position: absolute;
-      top: 30px;
-      content: "";
-      display: block;
+        margin-right: 20px;
+        transition: 0.5s; }
+        .community .inner .inputBox > .btn > button:hover {
+          background: #555;
+          color: #fff; }
+  .community .inner .showBox {
+    width: 68%;
+    height: 380px;
+    padding: 30px 50px;
+    border: 1px solid #aaa;
+    overflow-y: scroll; }
+    .community .inner .showBox article {
       width: 100%;
-      height: 1px;
-      background: #555; }
+      padding: 30px 40px;
+      background: #ffffffc9;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center; }
+      .community .inner .showBox article .post {
+        width: 70%; }
+        .community .inner .showBox article .post > h2 {
+          font: bold 18px/1 "Rajdhani";
+          letter-spacing: 1px;
+          color: #555;
+          margin-bottom: 5px; }
+        .community .inner .showBox article .post > p {
+          font: 14px/1.2 "Rajdhani";
+          letter-spacing: 0.5px;
+          color: #777; }
+        .community .inner .showBox article .post > input {
+          width: 90%;
+          padding: 5px 10px;
+          border: 1px solid #555;
+          background: #efefef;
+          margin-bottom: 5px; }
+        .community .inner .showBox article .post > textarea {
+          width: 90%;
+          padding: 10px;
+          border: 1px solid #555;
+          background: #efefef;
+          resize: none; }
+      .community .inner .showBox article .btns {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .community .inner .showBox article .btns li {
+          cursor: pointer;
+          margin: 5px;
+          border: none;
+          background: none;
+          font: 12px/1 "arial";
+          color: #555; }
+          .community .inner .showBox article .btns li:nth-of-type(2) {
+            color: #be0101; }
   .community .inner .right {
     width: 28%;
     float: right;
@@ -1005,10 +1112,10 @@ figure {
       object-fit: cover;
       margin-top: 30px;
       width: 100%;
-      height: 240px;
+      height: 245px;
       filter: grayscale(1); }
   .community .inner .banner {
-    padding: 150px 0 100px;
+    padding: 100px 0 100px;
     width: 100%; }
     .community .inner .banner .b_box {
       width: 100%;
@@ -1083,18 +1190,18 @@ figure {
         transition: 1s; }
         .community .inner .news_box .n_box2 .n_pic2:hover {
           filter: grayscale(0); }
-      .community .inner .news_box .n_box2 > h2 {
+      .community .inner .news_box .n_box2 .txt_box2 > h2 {
         margin-top: 10px;
         font: bold 19px/1.2 "PT Sans Narrow";
         color: #333;
         letter-spacing: 0.5px; }
-      .community .inner .news_box .n_box2 > p {
+      .community .inner .news_box .n_box2 .txt_box2 > p {
         margin-top: 10px;
         font: normal 15px/1.4 "PT Sans Narrow";
         letter-spacing: 0.3px;
         color: #555;
         word-break: break-all; }
-      .community .inner .news_box .n_box2 > button {
+      .community .inner .news_box .n_box2 .txt_box2 > button {
         cursor: pointer;
         color: #333;
         margin-top: 15px;
@@ -1111,18 +1218,18 @@ figure {
         transition: 1s; }
         .community .inner .news_box .n_box3 .n_pic3:hover {
           filter: grayscale(0); }
-      .community .inner .news_box .n_box3 > h2 {
+      .community .inner .news_box .n_box3 .txt_box3 > h2 {
         margin-top: 10px;
         font: bold 19px/1.2 "PT Sans Narrow";
         color: #333;
         letter-spacing: 0.5px; }
-      .community .inner .news_box .n_box3 > p {
+      .community .inner .news_box .n_box3 .txt_box3 > p {
         margin-top: 10px;
         font: normal 15px/1.4 "PT Sans Narrow";
         letter-spacing: 0.3px;
         color: #555;
         word-break: break-all; }
-      .community .inner .news_box .n_box3 > button {
+      .community .inner .news_box .n_box3 .txt_box3 > button {
         cursor: pointer;
         color: #333;
         margin-top: 15px;
@@ -1232,6 +1339,626 @@ figure {
         letter-spacing: 0.5px;
         color: #555; }
 
+@media screen and (max-width: 1179px) {
+  .community .inner {
+    position: relative; }
+    .community .inner .banner .b_box > h2 {
+      font: bold 22px/1.3 "PT Sans Narrow"; }
+    .community .inner .news_box {
+      height: 412px; }
+      .community .inner .news_box::after {
+        content: "";
+        display: block;
+        clear: both; }
+      .community .inner .news_box .n_box1 {
+        float: left;
+        width: 45%; }
+        .community .inner .news_box .n_box1 .n_pic1 {
+          height: 400px;
+          filter: brightness(0.2) grayscale(1); }
+          .community .inner .news_box .n_box1 .n_pic1:hover {
+            filter: grayscale(1) brightness(0.2); }
+        .community .inner .news_box .n_box1 .txt_box {
+          text-align: center;
+          width: 30%;
+          position: absolute;
+          top: 10%;
+          left: 7.5%; }
+          .community .inner .news_box .n_box1 .txt_box > h2 {
+            font: bold 19px/35px "PT Sans Narrow";
+            color: #fff;
+            letter-spacing: 0.5px; }
+          .community .inner .news_box .n_box1 .txt_box > p {
+            font: normal 14px/1.4 "PT Sans Narrow";
+            color: #ddd; }
+          .community .inner .news_box .n_box1 .txt_box > button {
+            color: #fff; }
+      .community .inner .news_box .n_box2 {
+        position: absolute;
+        right: 26%;
+        float: right;
+        width: 24%; }
+        .community .inner .news_box .n_box2 .n_pic2 {
+          width: 100%;
+          height: 206px;
+          object-fit: cover;
+          filter: grayscale(1);
+          transition: 1s; }
+          .community .inner .news_box .n_box2 .n_pic2:hover {
+            filter: grayscale(0); }
+        .community .inner .news_box .n_box2 .txt_box2 > h2 {
+          margin-top: 10px;
+          font: bold 19px/1.2 "PT Sans Narrow";
+          color: #333;
+          letter-spacing: 0.5px; }
+        .community .inner .news_box .n_box2 .txt_box2 > p {
+          margin-top: 10px;
+          font: normal 14px/1.4 "PT Sans Narrow";
+          letter-spacing: 0.3px;
+          color: #555;
+          word-break: break-all; }
+        .community .inner .news_box .n_box2 .txt_box2 > button {
+          cursor: pointer;
+          color: #333;
+          margin-top: 15px;
+          border: none;
+          font: normal 15px/1.4 "PT Sans Narrow";
+          background: none; }
+      .community .inner .news_box .n_box3 {
+        float: right;
+        width: 24%; }
+        .community .inner .news_box .n_box3 .n_pic3 {
+          width: 100%;
+          height: 206px;
+          object-fit: cover;
+          filter: grayscale(1);
+          transition: 1s; }
+          .community .inner .news_box .n_box3 .n_pic3:hover {
+            filter: grayscale(0); }
+        .community .inner .news_box .n_box3 .txt_box3 > h2 {
+          margin-top: 10px;
+          font: bold 19px/1.2 "PT Sans Narrow";
+          color: #333;
+          letter-spacing: 0.5px; }
+        .community .inner .news_box .n_box3 .txt_box3 > p {
+          margin-top: 10px;
+          font: normal 14px/1.4 "PT Sans Narrow";
+          letter-spacing: 0.3px;
+          color: #555;
+          word-break: break-all; }
+        .community .inner .news_box .n_box3 .txt_box3 > button {
+          cursor: pointer;
+          color: #333;
+          margin-top: 15px;
+          border: none;
+          font: normal 15px/1.4 "PT Sans Narrow";
+          background: none; }
+      .community .inner .news_box::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        position: absolute;
+        bottom: -50px; }
+    .community .inner .opening {
+      position: relative;
+      padding: 100px 0px;
+      width: 100%; }
+      .community .inner .opening::after {
+        content: "";
+        display: block;
+        clear: both; }
+      .community .inner .opening .open {
+        position: relative;
+        float: left;
+        width: 55%; }
+        .community .inner .opening .open .open_box {
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
+          filter: grayscale(1);
+          transition: 1s; }
+          .community .inner .opening .open .open_box:hover {
+            filter: grayscale(0); }
+      .community .inner .opening .open_txt {
+        float: right;
+        width: 40%; }
+        .community .inner .opening .open_txt > h2 {
+          font: bold 19px/35px "PT Sans Narrow";
+          color: #333;
+          letter-spacing: 0.5px; }
+        .community .inner .opening .open_txt > p {
+          margin-top: 10px;
+          font: normal 15px/1.4 "PT Sans Narrow";
+          letter-spacing: 0.3px;
+          color: #555;
+          word-break: break-all; }
+        .community .inner .opening .open_txt > button {
+          cursor: pointer;
+          color: #333;
+          margin-top: 15px;
+          border: none;
+          font: normal 15px/1.4 "PT Sans Narrow";
+          background: none; }
+      .community .inner .opening::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        position: absolute;
+        bottom: 50px; } }
+@media screen and (max-width: 744px) {
+  .community .inner {
+    position: relative; }
+    .community .inner .inputBox {
+      width: 100%;
+      position: relative; }
+      .community .inner .inputBox > .btn {
+        width: 100%; }
+        .community .inner .inputBox > .btn > button {
+          font: bold 15px/1 "Rajdhani";
+          width: 150px;
+          height: 30px;
+          border: 1px solid #aaa;
+          color: #555;
+          margin-right: 20px;
+          transition: 0.5s; }
+          .community .inner .inputBox > .btn > button:last-child {
+            margin-right: 0px; }
+          .community .inner .inputBox > .btn > button:hover {
+            background: #555;
+            color: #fff; }
+    .community .inner .showBox {
+      width: 100%;
+      margin-bottom: 60px; }
+      .community .inner .showBox article {
+        width: 100%;
+        padding: 30px 40px;
+        background: #ffffffc9;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center; }
+        .community .inner .showBox article .post {
+          width: 70%; }
+          .community .inner .showBox article .post > h2 {
+            font: bold 18px/1 "Rajdhani";
+            letter-spacing: 1px;
+            color: #555;
+            margin-bottom: 5px; }
+          .community .inner .showBox article .post > p {
+            font: 14px/1.2 "Rajdhani";
+            letter-spacing: 0.5px;
+            color: #777; }
+          .community .inner .showBox article .post > input {
+            width: 90%;
+            padding: 5px 10px;
+            border: 1px solid #555;
+            background: #efefef;
+            margin-bottom: 5px; }
+          .community .inner .showBox article .post > textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #555;
+            background: #efefef;
+            resize: none; }
+        .community .inner .showBox article .btns {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .community .inner .showBox article .btns li {
+            cursor: pointer;
+            margin: 5px;
+            border: none;
+            background: none;
+            font: 12px/1 "arial";
+            color: #555; }
+            .community .inner .showBox article .btns li:nth-of-type(2) {
+              color: #be0101; }
+    .community .inner .right {
+      width: 100%;
+      float: none;
+      position: relative;
+      display: flex;
+      top: 0px;
+      right: 0; }
+      .community .inner .right .pic1 {
+        width: 48%;
+        height: 300px;
+        object-fit: cover;
+        filter: grayscale(1);
+        margin-right: 4%; }
+      .community .inner .right .pic2 {
+        object-fit: cover;
+        margin-top: 0px;
+        width: 48%;
+        height: 300px;
+        filter: grayscale(1); }
+    .community .inner .banner {
+      padding: 100px 0 80px; }
+      .community .inner .banner .b_box {
+        height: 200px; }
+        .community .inner .banner .b_box .b_pic {
+          height: 200px; }
+        .community .inner .banner .b_box > h2 {
+          width: 80%;
+          font: bold 18px/1.3 "PT Sans Narrow"; }
+    .community .inner .news_box {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      .community .inner .news_box .n_box1 {
+        position: relative;
+        float: none;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 70px; }
+        .community .inner .news_box .n_box1 .n_pic1 {
+          width: 100%;
+          height: 206px;
+          object-fit: cover;
+          filter: grayscale(1);
+          opacity: 0.9;
+          transition: 1s; }
+          .community .inner .news_box .n_box1 .n_pic1:hover {
+            filter: grayscale(0); }
+        .community .inner .news_box .n_box1 .txt_box {
+          width: 100%;
+          position: relative;
+          top: 0%;
+          left: 0; }
+          .community .inner .news_box .n_box1 .txt_box > h2 {
+            font: bold 19px/35px "PT Sans Narrow";
+            color: #333;
+            letter-spacing: 0.5px; }
+          .community .inner .news_box .n_box1 .txt_box > p {
+            text-align: left;
+            margin-top: 10px;
+            font: normal 14px/1.4 "PT Sans Narrow";
+            letter-spacing: 0.3px;
+            color: #555;
+            word-break: break-all; }
+          .community .inner .news_box .n_box1 .txt_box > button {
+            position: absolute;
+            left: 0px;
+            cursor: pointer;
+            color: #333;
+            margin-top: 15px;
+            border: none;
+            font: normal 15px/1.4 "PT Sans Narrow";
+            background: none; }
+      .community .inner .news_box .n_box2 {
+        position: relative;
+        right: 0px;
+        float: none;
+        width: 100%;
+        margin-bottom: 35px; }
+        .community .inner .news_box .n_box2 .n_pic2 {
+          width: 100%;
+          object-fit: cover;
+          filter: grayscale(1);
+          transition: 1s; }
+          .community .inner .news_box .n_box2 .n_pic2:hover {
+            filter: grayscale(0); }
+        .community .inner .news_box .n_box2 .txt_box2 > p {
+          font: normal 14px/1.4 "PT Sans Narrow"; }
+      .community .inner .news_box .n_box3 {
+        position: relative;
+        float: none;
+        width: 100%; }
+        .community .inner .news_box .n_box3 .n_pic3 {
+          width: 100%;
+          object-fit: cover;
+          filter: grayscale(1);
+          transition: 1s; }
+          .community .inner .news_box .n_box3 .n_pic3:hover {
+            filter: grayscale(0); }
+        .community .inner .news_box .n_box3 .txt_box3 > p {
+          font: normal 14px/1.4 "PT Sans Narrow"; }
+    .community .inner .opening {
+      padding: 110px 0px 100px; }
+      .community .inner .opening .open {
+        position: relative;
+        float: left;
+        width: 100%; }
+      .community .inner .opening .open_txt {
+        float: none;
+        width: 100%; }
+        .community .inner .opening .open_txt > p {
+          margin-top: 10px;
+          font: normal 14px/1.4 "PT Sans Narrow";
+          letter-spacing: 0.3px;
+          color: #555;
+          word-break: break-all; }
+      .community .inner .opening::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        position: absolute;
+        bottom: 50px; }
+    .community .inner .newsletter {
+      position: relative;
+      padding: 10px 0px;
+      width: 100%; }
+      .community .inner .newsletter .letter {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        filter: grayscale(1); }
+      .community .inner .newsletter .letter_txt {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 22%;
+        left: 0; }
+        .community .inner .newsletter .letter_txt > h1 {
+          margin-top: 20px;
+          font: bold 20px/1.3 "PT Sans Narrow";
+          color: #555;
+          letter-spacing: 0.5px; }
+        .community .inner .newsletter .letter_txt > span {
+          font: normal 15px/1 "PT Sans Narrow";
+          color: #888;
+          letter-spacing: 0.5px; }
+        .community .inner .newsletter .letter_txt > button {
+          width: 120px;
+          height: 30px;
+          cursor: pointer;
+          color: #333;
+          margin-top: 5px;
+          border: none;
+          font: bold 15px/1 "PT Sans Narrow";
+          letter-spacing: 1px;
+          border: 1px solid #333;
+          transition: 1s;
+          background: none; }
+          .community .inner .newsletter .letter_txt > button:hover {
+            color: #fff;
+            border: none;
+            background: #333; }
+        .community .inner .newsletter .letter_txt p {
+          margin-top: 20px;
+          font: normal 16px/1 "PT Sans Narrow";
+          letter-spacing: 0.5px;
+          color: #555; } }
+@media screen and (max-width: 539px) {
+  .community .inner {
+    position: relative; }
+    .community .inner .inputBox {
+      width: 100%;
+      position: relative; }
+      .community .inner .inputBox > .btn {
+        width: 100%; }
+        .community .inner .inputBox > .btn > button {
+          font: bold 13px/1 "Rajdhani";
+          width: 120px;
+          height: 30px;
+          border: 1px solid #aaa;
+          color: #555;
+          margin-right: 20px;
+          transition: 0.5s; }
+          .community .inner .inputBox > .btn > button:last-child {
+            margin-right: 0px; }
+          .community .inner .inputBox > .btn > button:hover {
+            background: #555;
+            color: #fff; }
+    .community .inner .showBox {
+      width: 100%; }
+      .community .inner .showBox article {
+        width: 100%;
+        padding: 30px 40px;
+        background: #ffffffc9;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: center; }
+        .community .inner .showBox article .post {
+          width: 70%; }
+          .community .inner .showBox article .post > h2 {
+            font: bold 18px/1 "Rajdhani";
+            letter-spacing: 1px;
+            color: #555;
+            margin-bottom: 5px; }
+          .community .inner .showBox article .post > p {
+            font: 14px/1.2 "Rajdhani";
+            letter-spacing: 0.5px;
+            color: #777; }
+          .community .inner .showBox article .post > input {
+            width: 90%;
+            padding: 5px 10px;
+            border: 1px solid #555;
+            background: #efefef;
+            margin-bottom: 5px; }
+          .community .inner .showBox article .post > textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #555;
+            background: #efefef;
+            resize: none; }
+        .community .inner .showBox article .btns {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .community .inner .showBox article .btns li {
+            cursor: pointer;
+            margin: 5px;
+            border: none;
+            background: none;
+            font: 12px/1 "arial";
+            color: #555; }
+            .community .inner .showBox article .btns li:nth-of-type(2) {
+              color: #be0101; }
+    .community .inner .right {
+      display: block; }
+      .community .inner .right .pic1 {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        filter: grayscale(1);
+        margin-right: 20px; }
+      .community .inner .right .pic2 {
+        object-fit: cover;
+        margin-top: 20px;
+        width: 100%;
+        height: 250px;
+        filter: grayscale(1); }
+    .community .inner .banner {
+      padding: 60px 0 60px; }
+      .community .inner .banner .b_box {
+        height: 200px; }
+        .community .inner .banner .b_box .b_pic {
+          height: 200px; }
+        .community .inner .banner .b_box > h2 {
+          width: 80%;
+          font: bold 18px/1.3 "PT Sans Narrow"; }
+    .community .inner .news_box {
+      position: relative;
+      width: 100%;
+      height: 100%; }
+      .community .inner .news_box .n_box1 {
+        position: relative;
+        float: none;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 70px; }
+        .community .inner .news_box .n_box1 .n_pic1 {
+          width: 100%;
+          height: 206px;
+          object-fit: cover;
+          filter: grayscale(1);
+          opacity: 0.9;
+          transition: 1s; }
+          .community .inner .news_box .n_box1 .n_pic1:hover {
+            filter: grayscale(0); }
+        .community .inner .news_box .n_box1 .txt_box {
+          width: 100%;
+          position: relative;
+          top: 0%;
+          left: 0; }
+          .community .inner .news_box .n_box1 .txt_box > h2 {
+            font: bold 19px/35px "PT Sans Narrow";
+            color: #333;
+            letter-spacing: 0.5px; }
+          .community .inner .news_box .n_box1 .txt_box > p {
+            text-align: left;
+            margin-top: 10px;
+            font: normal 14px/1.4 "PT Sans Narrow";
+            letter-spacing: 0.3px;
+            color: #555;
+            word-break: break-all; }
+          .community .inner .news_box .n_box1 .txt_box > button {
+            position: absolute;
+            left: 0px;
+            cursor: pointer;
+            color: #333;
+            margin-top: 15px;
+            border: none;
+            font: normal 15px/1.4 "PT Sans Narrow";
+            background: none; }
+      .community .inner .news_box .n_box2 {
+        position: relative;
+        right: 0px;
+        float: none;
+        width: 100%;
+        margin-bottom: 35px; }
+        .community .inner .news_box .n_box2 .n_pic2 {
+          width: 100%;
+          object-fit: cover;
+          filter: grayscale(1);
+          transition: 1s; }
+          .community .inner .news_box .n_box2 .n_pic2:hover {
+            filter: grayscale(0); }
+        .community .inner .news_box .n_box2 .txt_box2 > p {
+          font: normal 14px/1.4 "PT Sans Narrow"; }
+      .community .inner .news_box .n_box3 {
+        position: relative;
+        float: none;
+        width: 100%; }
+        .community .inner .news_box .n_box3 .n_pic3 {
+          width: 100%;
+          object-fit: cover;
+          filter: grayscale(1);
+          transition: 1s; }
+          .community .inner .news_box .n_box3 .n_pic3:hover {
+            filter: grayscale(0); }
+        .community .inner .news_box .n_box3 .txt_box3 > p {
+          font: normal 14px/1.4 "PT Sans Narrow"; }
+    .community .inner .opening {
+      padding: 110px 0px 100px; }
+      .community .inner .opening .open {
+        position: relative;
+        float: left;
+        width: 100%; }
+      .community .inner .opening .open_txt {
+        float: none;
+        width: 100%; }
+        .community .inner .opening .open_txt > p {
+          margin-top: 10px;
+          font: normal 14px/1.4 "PT Sans Narrow";
+          letter-spacing: 0.3px;
+          color: #555;
+          word-break: break-all; }
+      .community .inner .opening::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        position: absolute;
+        bottom: 50px; }
+    .community .inner .newsletter {
+      position: relative;
+      padding: 10px 0px;
+      width: 100%; }
+      .community .inner .newsletter .letter {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        filter: grayscale(1); }
+      .community .inner .newsletter .letter_txt {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 22%;
+        left: 0; }
+        .community .inner .newsletter .letter_txt > h1 {
+          margin-top: 20px;
+          font: bold 20px/1.3 "PT Sans Narrow";
+          color: #555;
+          letter-spacing: 0.5px; }
+        .community .inner .newsletter .letter_txt > span {
+          font: normal 15px/1 "PT Sans Narrow";
+          color: #888;
+          letter-spacing: 0.5px; }
+        .community .inner .newsletter .letter_txt > button {
+          width: 120px;
+          height: 30px;
+          cursor: pointer;
+          color: #333;
+          margin-top: 5px;
+          border: none;
+          font: bold 15px/1 "PT Sans Narrow";
+          letter-spacing: 1px;
+          border: 1px solid #333;
+          transition: 1s;
+          background: none; }
+          .community .inner .newsletter .letter_txt > button:hover {
+            color: #fff;
+            border: none;
+            background: #333; }
+        .community .inner .newsletter .letter_txt p {
+          margin-top: 20px;
+          font: normal 16px/1 "PT Sans Narrow";
+          letter-spacing: 0.5px;
+          color: #555; } }
 .gallery .inner {
   position: relative; }
   .gallery .inner .loading {
@@ -1308,7 +2035,9 @@ figure {
         font: normal 12px/1.2 "PT Sans Narrow";
         letter-spacing: 0.7px;
         color: #777; }
-.gallery .pop {
+
+.pop {
+  z-index: 10;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -1316,7 +2045,7 @@ figure {
   left: 0px;
   background: rgba(37, 37, 37, 0.9);
   padding: 5vw; }
-  .gallery .pop img {
+  .pop img {
     width: 65%;
     height: 65%;
     object-fit: contain;
@@ -1325,7 +2054,7 @@ figure {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-  .gallery .pop p {
+  .pop p {
     background: #222;
     font: 14px/1.2 "PT Sans Narrow";
     color: #fff;
@@ -1334,7 +2063,7 @@ figure {
     left: 17.6%;
     text-align: center;
     letter-spacing: 1px; }
-  .gallery .pop span {
+  .pop span {
     font: bold 14px/1 "PT Sans Narrow";
     letter-spacing: 0.5px;
     color: #fff;
@@ -1343,6 +2072,16 @@ figure {
     right: 5vw;
     cursor: pointer; }
 
+@media screen and (max-width: 790px) {
+  .gallery .inner .loading {
+    width: 30%; }
+  .gallery .inner .list article {
+    width: 50%; } }
+@media screen and (max-width: 539px) {
+  .gallery .inner .loading {
+    width: 40%; }
+  .gallery .inner .list article {
+    width: 100%; } }
 .youtube .inner h1 a {
   font: normal 80px/1 "PT Sans Narrow";
   color: #333; }
@@ -1426,7 +2165,8 @@ figure {
         transition: 1s; }
         .youtube .inner .frame article .inner .pic img:hover {
           filter: grayscale(0); }
-.youtube .inner .pop {
+
+.pop {
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -1434,14 +2174,14 @@ figure {
   left: 0px;
   background: rgba(37, 37, 37, 0.9);
   padding: 5vw; }
-  .youtube .inner .pop iframe {
+  .pop iframe {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 65%;
     height: 65%; }
-  .youtube .inner .pop span {
+  .pop span {
     position: absolute;
     top: 3vw;
     right: 5vw;
