@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/react-pf-basic/static/css/main.7d6133c8.css",
-    "main.js": "/react-pf-basic/static/js/main.fcf37684.js",
+    "main.css": "/react-pf-basic/static/css/main.192f30f7.css",
+    "main.js": "/react-pf-basic/static/js/main.86930d54.js",
     "static/media/main_bg.jpg": "/react-pf-basic/static/media/main_bg.f857ca32cce55ab463eb.jpg",
     "static/media/join5.jpg": "/react-pf-basic/static/media/join5.d40f7ff5c601ddfa6276.jpg",
     "static/media/join1.jpg": "/react-pf-basic/static/media/join1.fc5e2945ec8df0ab5476.jpg",
     "static/media/join4.jpg": "/react-pf-basic/static/media/join4.147c9caac94924cb9c31.jpg",
     "index.html": "/react-pf-basic/index.html",
-    "main.7d6133c8.css.map": "/react-pf-basic/static/css/main.7d6133c8.css.map",
-    "main.fcf37684.js.map": "/react-pf-basic/static/js/main.fcf37684.js.map"
+    "main.192f30f7.css.map": "/react-pf-basic/static/css/main.192f30f7.css.map",
+    "main.86930d54.js.map": "/react-pf-basic/static/js/main.86930d54.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d6133c8.css",
-    "static/js/main.fcf37684.js"
+    "static/css/main.192f30f7.css",
+    "static/js/main.86930d54.js"
   ]
 }
