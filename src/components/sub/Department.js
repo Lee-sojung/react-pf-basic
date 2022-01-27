@@ -1,5 +1,8 @@
 import axios from "axios";
 import { useEffect, useState, useRef } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
 
 
 function Department() {
@@ -21,6 +24,7 @@ function Department() {
         <main className="about" ref={frame}>
             <div className="inner">
                 <h1><a href="#">ABOUT</a></h1>
+                {/* <FontAwesomeIcon icon={faCoffee} size="3x" color="#fff" /> */}
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>
 
                 <div className="about_vid">

@@ -66,7 +66,7 @@ header {
             color: #111;
             font-weight: bold; }
     header .inner .btnCall {
-      display: block;
+      display: none;
       width: 20px;
       height: 20px;
       position: absolute;
@@ -121,29 +121,37 @@ header {
       left: -270px;
       width: 270px;
       height: 100vh;
-      background: #555;
+      background: #333;
       transition: 0.5s;
       padding: 35px 30px;
       z-index: 10; }
-      header .inner .menuMobile h1 {
-        border-bottom: 1px solid #666;
-        padding-bottom: 30px; }
-        header .inner .menuMobile h1 a {
+      header .inner .menuMobile > h1 {
+        width: 100%;
+        padding-bottom: 30px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center; }
+        header .inner .menuMobile > h1 > a {
           display: block;
-          font: bold 24px/1 'arial';
-          color: #fff;
-          text-align: center; }
-        header .inner .menuMobile h1 span {
-          font-size: 12px;
+          font: bold 20px/1 "Dosis";
+          letter-spacing: 0.5px;
+          color: #ddd; }
+        header .inner .menuMobile > h1 > span {
+          font: bold 13px/1 "Dosis";
+          letter-spacing: 0.5px;
           color: #aaa; }
       header .inner .menuMobile #gnbMo li {
         display: block;
         width: 100%;
         padding: 20px 0px;
         border-bottom: 1px solid #444;
-        font: bold 14px/1 "arial";
         color: #888;
         text-align: center; }
+        header .inner .menuMobile #gnbMo li > a {
+          color: #aaa;
+          font: bold 15px/1 "Dosis"; }
       header .inner .menuMobile.on {
         left: 0px; }
 
@@ -223,6 +231,8 @@ footer {
     width: 100%; }
     header .inner h1 {
       left: 3vw; }
+    header .inner .btnCall {
+      display: block; }
     header .inner #gnb {
       display: none; }
 

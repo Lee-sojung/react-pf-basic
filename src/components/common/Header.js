@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 function Header() {
     const active = { color: "#111", fontWeight: "bold", fontSize: "15px" };
     const menuMo = useRef(null);
+    const active_mo = { color: "#fff", fontWeight: "bold", fontSize: "16px" };
     return (
         <header>
             <div className="inner">
@@ -33,12 +34,12 @@ function Header() {
                     </h1>
 
                     <ul id="gnbMo">
-                        <li><NavLink activeStyle={active} exact to="/department">ABOUT</NavLink></li>
-                        <li><NavLink activeStyle={active} exact to="/community">COMMUNITY</NavLink></li>
-                        <li><NavLink activeStyle={active} exact to="/gallery">GALLERY</NavLink></li>
-                        <li><NavLink activeStyle={active} exact to="/youtube">YOUTUBE</NavLink></li>
-                        <li><NavLink activeStyle={active} exact to="/location">LOCATION</NavLink></li>
-                        <li><NavLink activeStyle={active} exact to="/join">JOIN</NavLink></li>
+                        <li><NavLink activeStyle={active_mo} exact to="/department">ABOUT</NavLink></li>
+                        <li><NavLink activeStyle={active_mo} exact to="/community">COMMUNITY</NavLink></li>
+                        <li><NavLink activeStyle={active_mo} exact to="/gallery">GALLERY</NavLink></li>
+                        <li><NavLink activeStyle={active_mo} exact to="/youtube">YOUTUBE</NavLink></li>
+                        <li><NavLink activeStyle={active_mo} exact to="/location">LOCATION</NavLink></li>
+                        <li><NavLink activeStyle={active_mo} exact to="/join">JOIN</NavLink></li>
                     </ul>
                 </nav>
             </div>
