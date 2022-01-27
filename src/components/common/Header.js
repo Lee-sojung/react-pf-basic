@@ -20,14 +20,14 @@ function Header() {
                 </ul>
 
 
-                <div class="btnCall" onClick={e=>{
+                <div className="btnCall" onClick={e=>{
                     e.currentTarget.classList.toggle('on');
                     menuMo.current.classList.toggle('on');
                 }}>
                     <span>메뉴호출</span>
                 </div>
 
-                <nav class="menuMobile" ref={menuMo}>
+                <nav className="menuMobile" ref={menuMo}>
                     <h1>
                         <NavLink exact to="/">REACT PORTFOLIO</NavLink>
                         <span>UI/UX DEVELOPMENT INSTITUTE</span>

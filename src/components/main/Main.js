@@ -54,7 +54,6 @@ function Main() {
 
     return (
         <div id='mainWrap' ref={main}>
-            <Header type={'main'} />
             <Info />
             <Btns getIndex={getIndex} />
         </div>

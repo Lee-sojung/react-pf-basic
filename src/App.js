@@ -38,6 +38,7 @@ function App() {
       <Header />
 
       <Route exact path="/">
+        <Main />
         <Visual />
         <Info />
       </Route>
