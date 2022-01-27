@@ -1,14 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <title>React pf basic</title>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	ad03676f27963cfc576be0006fb90ebe"></script>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <title>React pf basic</title>
+  <script type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=	ad03676f27963cfc576be0006fb90ebe"></script>
+
+  <style>
+    .mask {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      background: #111;
+      top: 0px;
+      left: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 30px;
+      font-family: 'Rajdhani';
+      z-index: 10;
+      transition: opacity 1s;
+    }
+
+    .mask.off {
+      opacity: 0;
+    }
+  </style>
+
+</head>
+
+<body class="first">
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+  <div class="mask">Please wait a moment . . .</div>
+</body>
+
 </html>

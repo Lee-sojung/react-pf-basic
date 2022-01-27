@@ -16,9 +16,23 @@ import Gallery from './components/sub/Gallery.js';
 import Youtube from './components/sub/Youtube.js';
 import Location from './components/sub/Location.js';
 import Join from './components/sub/Join.js';
+import { useEffect } from 'react';
 
 
 function App() {
+  useEffect(()=>{
+    document.body.classList.remove('first');
+
+    const mask = document.querySelector('.mask');
+    if(mask){
+      setTimeout(()=>{
+        mask.classList.add('off');
+        setTimeout(()=>{
+          mask.remove();
+        },1000);//transition 1초동안 fadeout 될때까지 기다리는 시간
+      },1000);//처음 App컴포넌트가 index.html에 연결될때까지의 시간지연
+    }
+  },[]);
   return (
     <div className="App">
       <Header />
