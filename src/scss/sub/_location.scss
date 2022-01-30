@@ -19,6 +19,11 @@
 				width: 100%;
 				height: 100%;
                 filter: grayscale(1);
+                transition: 0.5s;
+
+                &:hover{
+                    filter: grayscale(0);
+                }
 			}
 		}
 
@@ -170,3 +175,646 @@
 		}
 	}
 }
+@media screen and (max-width: 1179px){
+    .location {
+        .inner {
+            .ro_r {
+                border: 1px solid #333;
+                height: 500px;
+                float: right;
+                width: 25%;
+    
+                .ro_txt {
+                    margin: 30px 0;
+                    text-align: center;
+                    padding: 0 20px;
+                    width: 100%;
+    
+                    > h1 {
+                        font: bold 28px/1 "PT Sans Narrow";
+                        color:333;
+                        letter-spacing: 1px;
+                    }
+                    >input{
+                        width: 60%;
+                        height: 25px ;
+                        font-size: 13px;
+                        
+                    }
+                    >button{
+                        border: none;
+                        border: 1px solid #333;
+                        width: 38%;
+                        height: 25px;
+                        font: normal 13px/1 "PT Sans Narrow";
+                        transition: 0.5s;
+                        border-radius: 3px;
+                        letter-spacing: 0.5px;
+    
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                    >a{
+                        border: 1px solid #333;
+                        display: block;
+                        width: 100%;
+                        height: 40px;
+                        margin: 10px auto;
+                        margin-top: 20px;
+                        font: normal 15px/40px "PT Sans Narrow";
+                        color: #333;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s;
+    
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                    .traffic li{
+                        border: 1px solid #333;
+                        width: 100%;
+                        height: 40px;
+                        cursor: pointer;
+                        margin: 10px auto;
+                        font: normal 15px/40px "PT Sans Narrow";
+                        color: #333;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s;
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                }
+    
+                .lo_scroll{
+                    height: 254px;
+                    overflow-y: scroll;
+    
+                    .branch li {
+                        font: normal 14px/1 "맑은 고딕";
+                        letter-spacing: 0.5px;
+                        background: #fff;
+                        text-align: center;
+                        border-top: 1px solid #333;
+                        padding: 20px;
+                        width: 100%;
+                        color: #333;
+                        cursor: pointer;
+                        transition: 0.5s;
+    
+                        >p{
+                            margin-top: 5px;
+                            font: normal 12px/1 "arial";
+                            letter-spacing: 0.5px;
+                        }
+                        >button{
+                            background: none;
+                            border: none;
+                            border-bottom: 1px solid #333;
+                            margin-top: 10px;
+                            font: normal 13px/1 "PT Sans Narrow";
+                            color: #555;
+                            letter-spacing: 0.5px;
+                            padding-bottom: 5px;
+                        }
+    
+                        &.on {
+                            background: #333;
+                            color: #fff;
+                            border-top: 1px solid #fff;
+    
+                            >button{
+                                color: #ccc;
+                                border-bottom: 1px solid #ccc;
+                            }
+    
+                        }
+                    }
+    
+                        
+                }
+    
+            }
+    
+            > h1 {
+                a {
+                    font: normal 80px/1 "PT Sans Narrow";
+                    color: #333;
+                }
+    
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 68%;
+                    height: 1px;
+                    background: #555;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+            }
+            > p {
+                font: 16px/1.3 "PT Sans Narrow";
+                color: #555;
+                margin: 0 auto;
+                width: 450px;
+                word-wrap: break-word;
+                letter-spacing: 1px;
+                margin-bottom: 150px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1098px){
+    .location {
+        .inner {
+            .ro_r {
+                border: 1px solid #333;
+                height: 500px;
+                float: right;
+                width: 28%;
+    
+                .ro_txt {
+                    margin: 30px 0;
+                    text-align: center;
+                    padding: 0 20px;
+                    width: 100%;
+    
+                    > h1 {
+                        font: bold 28px/1 "PT Sans Narrow";
+                        color:333;
+                        letter-spacing: 1px;
+                    }
+                    >input{
+                        width: 60%;
+                        height: 25px ;
+                        font-size: 13px;
+                        
+                    }
+                    >button{
+                        border: none;
+                        border: 1px solid #333;
+                        width: 38%;
+                        height: 25px;
+                        font: normal 13px/1 "PT Sans Narrow";
+                        transition: 0.5s;
+                        border-radius: 3px;
+                        letter-spacing: 0.5px;
+    
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                    >a{
+                        border: 1px solid #333;
+                        display: block;
+                        width: 100%;
+                        height: 40px;
+                        margin: 10px auto;
+                        margin-top: 20px;
+                        font: normal 15px/40px "PT Sans Narrow";
+                        color: #333;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s;
+    
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                    .traffic li{
+                        border: 1px solid #333;
+                        width: 100%;
+                        height: 40px;
+                        cursor: pointer;
+                        margin: 10px auto;
+                        font: normal 15px/40px "PT Sans Narrow";
+                        color: #333;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s;
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                }
+    
+                .lo_scroll{
+                    height: 254px;
+                    overflow-y: scroll;
+    
+                    .branch li {
+                        font: normal 14px/1 "맑은 고딕";
+                        letter-spacing: 0.5px;
+                        background: #fff;
+                        text-align: center;
+                        border-top: 1px solid #333;
+                        padding: 20px;
+                        width: 100%;
+                        color: #333;
+                        cursor: pointer;
+                        transition: 0.5s;
+    
+                        >p{
+                            margin-top: 5px;
+                            font: normal 12px/1 "arial";
+                            letter-spacing: 0.5px;
+                        }
+                        >button{
+                            background: none;
+                            border: none;
+                            border-bottom: 1px solid #333;
+                            margin-top: 10px;
+                            font: normal 13px/1 "PT Sans Narrow";
+                            color: #555;
+                            letter-spacing: 0.5px;
+                            padding-bottom: 5px;
+                        }
+    
+                        &.on {
+                            background: #333;
+                            color: #fff;
+                            border-top: 1px solid #fff;
+    
+                            >button{
+                                color: #ccc;
+                                border-bottom: 1px solid #ccc;
+                            }
+    
+                        }
+                    }
+    
+                        
+                }
+    
+            }
+    
+            > h1 {
+                a {
+                    font: normal 80px/1 "PT Sans Narrow";
+                    color: #333;
+                }
+    
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 68%;
+                    height: 1px;
+                    background: #555;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+            }
+            > p {
+                font: 16px/1.3 "PT Sans Narrow";
+                color: #555;
+                margin: 0 auto;
+                width: 450px;
+                word-wrap: break-word;
+                letter-spacing: 1px;
+                margin-bottom: 150px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 990px){
+    .location {
+        .inner {
+            .ro_r {
+                border: 1px solid #333;
+                height: 500px;
+                float: right;
+                width: 28%;
+    
+                .ro_txt {
+                    margin: 30px 0;
+                    text-align: center;
+                    padding: 0 20px;
+                    width: 100%;
+    
+                    > h1 {
+                        font: bold 28px/1 "PT Sans Narrow";
+                        color:333;
+                        letter-spacing: 1px;
+                    }
+                    >input{
+                        width: 55%;
+                        height: 25px ;
+                        font-size: 13px;
+                        
+                    }
+                    >button{
+                        border: none;
+                        border: 1px solid #333;
+                        width: 30%;
+                        height: 25px;
+                        font: normal 13px/1 "PT Sans Narrow";
+                        transition: 0.5s;
+                        border-radius: 3px;
+                        letter-spacing: 0.5px;
+    
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                    >a{
+                        border: 1px solid #333;
+                        display: block;
+                        width: 100%;
+                        height: 40px;
+                        margin: 10px auto;
+                        margin-top: 20px;
+                        font: normal 15px/40px "PT Sans Narrow";
+                        color: #333;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s;
+    
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                    .traffic li{
+                        border: 1px solid #333;
+                        width: 100%;
+                        height: 40px;
+                        cursor: pointer;
+                        margin: 10px auto;
+                        font: normal 15px/40px "PT Sans Narrow";
+                        color: #333;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s;
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                }
+    
+                .lo_scroll{
+                    height: 254px;
+                    overflow-y: scroll;
+    
+                    .branch li {
+                        font: normal 14px/1 "맑은 고딕";
+                        letter-spacing: 0.5px;
+                        background: #fff;
+                        text-align: center;
+                        border-top: 1px solid #333;
+                        padding: 20px;
+                        width: 100%;
+                        color: #333;
+                        cursor: pointer;
+                        transition: 0.5s;
+    
+                        >p{
+                            margin-top: 5px;
+                            font: normal 12px/1 "arial";
+                            letter-spacing: 0.5px;
+                        }
+                        >button{
+                            background: none;
+                            border: none;
+                            border-bottom: 1px solid #333;
+                            margin-top: 10px;
+                            font: normal 13px/1 "PT Sans Narrow";
+                            color: #555;
+                            letter-spacing: 0.5px;
+                            padding-bottom: 5px;
+                        }
+    
+                        &.on {
+                            background: #333;
+                            color: #fff;
+                            border-top: 1px solid #fff;
+    
+                            >button{
+                                color: #ccc;
+                                border-bottom: 1px solid #ccc;
+                            }
+    
+                        }
+                    }
+    
+                        
+                }
+    
+            }
+    
+            > h1 {
+                a {
+                    font: normal 80px/1 "PT Sans Narrow";
+                    color: #333;
+                }
+    
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 68%;
+                    height: 1px;
+                    background: #555;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+            }
+            > p {
+                font: 16px/1.3 "PT Sans Narrow";
+                color: #555;
+                margin: 0 auto;
+                width: 450px;
+                word-wrap: break-word;
+                letter-spacing: 1px;
+                margin-bottom: 150px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 779px){
+    .location {
+        .inner {
+            position: relative;
+    
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+    
+            .ro_l {
+                border: 1px solid #333;
+                float: none;
+                width: 100%;
+                height: 500px;
+                background: #000;
+    
+                #map {
+                    width: 100%;
+                    height: 100%;
+                    filter: grayscale(1);
+                    transition: 0.5s;
+    
+                    &:hover{
+                        filter: grayscale(0);
+                    }
+                }
+            }
+    
+            .ro_r {
+                margin-top: 50px;
+                border: 1px solid #333;
+                height: 500px;
+                float: none;
+                width: 100%;
+    
+                .ro_txt {
+                    margin: 30px 0;
+                    text-align: center;
+                    width: 100%;
+    
+                    > h1 {
+                        font: bold 28px/1 "PT Sans Narrow";
+                        color:333;
+                        letter-spacing: 1px;
+                    }
+                    >input{
+                        width: 150px;
+                        height: 25px ;
+                        font-size: 13px;
+                        background: none;
+                        border: none;
+                        border-bottom: 1px solid #333;
+                        
+                    }
+                    >button{
+                        border: none;
+                        border: 1px solid #333;
+                        width: 80px;
+                        height: 25px;
+                        font: normal 13px/1 "PT Sans Narrow";
+                        transition: 0.5s;
+                        border-radius: 3px;
+                        letter-spacing: 0.5px;
+    
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                    >a{
+                        border: 1px solid #333;
+                        display: block;
+                        width: 230px;
+                        height: 40px;
+                        margin: 10px auto;
+                        margin-top: 20px;
+                        font: normal 15px/40px "PT Sans Narrow";
+                        color: #333;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s;
+    
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                    .traffic li{
+                        border: 1px solid #333;
+                        width: 230px;
+                        height: 40px;
+                        cursor: pointer;
+                        margin: 10px auto;
+                        font: normal 15px/40px "PT Sans Narrow";
+                        color: #333;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s;
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                }
+    
+                .lo_scroll{
+                    height: 254px;
+                    overflow-y: scroll;
+    
+                    .branch li {
+                        font: normal 14px/1 "맑은 고딕";
+                        letter-spacing: 0.5px;
+                        background: #fff;
+                        text-align: center;
+                        border-top: 1px solid #333;
+                        padding: 20px;
+                        width: 100%;
+                        color: #333;
+                        cursor: pointer;
+                        transition: 0.5s;
+    
+                        >p{
+                            margin-top: 5px;
+                            font: normal 12px/1 "arial";
+                            letter-spacing: 0.5px;
+                        }
+                        >button{
+                            background: none;
+                            border: none;
+                            border-bottom: 1px solid #333;
+                            margin-top: 10px;
+                            font: normal 13px/1 "PT Sans Narrow";
+                            color: #555;
+                            letter-spacing: 0.5px;
+                            padding-bottom: 5px;
+                        }
+    
+                        &.on {
+                            background: #333;
+                            color: #fff;
+                            border-top: 1px solid #fff;
+    
+                            >button{
+                                color: #ccc;
+                                border-bottom: 1px solid #ccc;
+                            }
+    
+                        }
+                    }
+    
+                        
+                }
+    
+            }
+    
+            > h1 {
+                a {
+                    font: normal 80px/1 "PT Sans Narrow";
+                    color: #333;
+                }
+    
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 68%;
+                    height: 1px;
+                    background: #555;
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                }
+            }
+            > p {
+                font: 16px/1.3 "PT Sans Narrow";
+                color: #555;
+                margin: 0 auto;
+                width: 450px;
+                word-wrap: break-word;
+                letter-spacing: 1px;
+                margin-bottom: 150px;
+            }
+        }
+    }
+}
+
