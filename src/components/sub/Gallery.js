@@ -23,7 +23,11 @@ function Gallery() {
     const url = `https://www.flickr.com/services/rest/?method=flickr.interestingness.getList&api_key=${api_key}&per_page=20&format=json&nojsoncallback=1`;
 
     useEffect(() => {
+        setTimeout(()=>{
+            setLoading(false);
+        },1000);
         frame.current.classList.add('on');
+        list.current.classList.add('on');
         axios
             .get(url)
             .then(json => {
@@ -46,7 +50,7 @@ function Gallery() {
                                 count: 500
                             });
                         }
-                    }}><a href="#">GALLERY</a></h1>
+                    }}>GALLERY</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elity cinseterd Doloremque amet recusandae enim voluptatem nemo culpa! Dolor fugit vel, itaque deserunt quae minus quibusdam unde sint initded </p>
 
 
@@ -97,7 +101,7 @@ function Gallery() {
 
                     {(loading) ? <img className="loading" src={path + "/img/loading.gif"} /> : ""}
 
-                    <section className="list">
+                    <section className="list" ref={list}>
                         {
                             items.map((item, index) => {
                                 const imgSrc = `https://live.staticflickr.com/${item.server}/${item.id}_${item.secret}_m.jpg`;

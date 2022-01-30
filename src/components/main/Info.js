@@ -44,7 +44,7 @@ function Info() {
                     </div>
                 </div>
 
-                <div className="vivi myScroll" >
+                <div className="vivi" >
                     <img className="txt3_pic" src={path + "/img/holiday2.jpg"} />
                 </div>
 
@@ -103,7 +103,7 @@ function Info() {
 
                 </div>
 
-                <div className="sec4 myScroll">
+                <div className="sec4">
                     <div className="sec4_pic">
                         <img className="sec4_box" src={path + "/img/Nomades.jpg"} />
                     </div>

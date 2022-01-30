@@ -6,7 +6,7 @@ function Header() {
     const menuMo = useRef(null);
     const active_mo = { color: "#fff", fontWeight: "bold", fontSize: "16px" };
     return (
-        <header>
+        <header className='myScroll'>
             <div className="inner">
                 <h1> <NavLink exact to="/">REACT PORTFOLIO</NavLink> </h1>
 

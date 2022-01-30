@@ -6,7 +6,7 @@ import Footer from './components/common/Footer.js';
 
 //import main component
 import Visual from './components/main/Visual.js';
-import Info from './components/main/Info.js';
+// import Info from './components/main/Info.js';
 import Main from './components/main/Main.js';
 
 //import sub component
@@ -40,7 +40,7 @@ function App() {
       <Route exact path="/">
         <Main />
         <Visual />
-        <Info />
+        {/* <Info /> */}
       </Route>
 
       <Route exact path="/department" component={Department}></Route>

@@ -8,14 +8,14 @@
         width: 10px;
         height: 10px;
         border-radius: 5px;
-        background: #fff;
+        border: 1px solid #ccc;
         margin-bottom: 20px;
         cursor: pointer;
         transition: 0.5s;
 
         &.on{
-            height: 80px;
-            background: #111;
+            height: 50px;
+            background: #333;
         }
     }
 }

@@ -8,7 +8,8 @@ import { useEffect, useState, useRef } from 'react';
 function Main() {
 
     const main = useRef(null);
-    let pos = useRef([]);
+    let pos = useRef([]);    
+
     const [index, setIndex] = useState(0);
 
     const getIndex = index => {
@@ -20,11 +21,13 @@ function Main() {
         let arr = [];
         for (let sec of secs) arr.push(sec.offsetTop);
         pos.current = arr;
+        console.log(pos.current);
     }
 
     const handleScroll = () => {
-        let scroll = window.scrollY;
-        const btns = main.current.querySelectorAll('#btns li');
+        let scroll = window.scrollY; 
+        const btns = main.current.querySelectorAll('#btns li');    
+        console.log(btns);       
 
         pos.current.map((pos, index) => {
             if (scroll >= pos) {
@@ -36,6 +39,8 @@ function Main() {
     }
 
     useEffect(() => {
+        
+
         handleResize();
         window.addEventListener('resize', handleResize);
         window.addEventListener('scroll', handleScroll);
