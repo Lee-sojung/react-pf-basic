@@ -40,12 +40,14 @@ header {
 			}
 		}
 		.btnCall{
+			z-index: 50;
+			position: fixed;
             display:none; 
             width:20px; 
             height:20px; 
-            position:absolute; 
+            // position:absolute; 
             right:30px; 
-            top:70%; 
+            top:8%; 
             transform:translateY(-50%); 
 
             &::before{
@@ -256,6 +258,7 @@ footer {
 				left: 3vw;
 			}
 			.btnCall{
+				
 				display:block; 
 			}
 			#gnb {

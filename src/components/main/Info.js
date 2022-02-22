@@ -4,7 +4,7 @@ function Info() {
     return (
         <section id="info">
             <div className="inner">
-                <div className="myScroll">
+                <div className="louis myScroll">
                     <div className="sec1">
                         <h2>LOUIS VUITTON ACTIVITY</h2>
                         <div className="sec1_pic">
@@ -165,6 +165,7 @@ function Info() {
 
 
                 <div className="sec7 myScroll">
+                <img className="sec7_pic" src={path + "/img/section7.png"} />
                     <div className="sec7_txt">
                         <h1>2020 OSCARS</h1>
                         <p>Actors including Lea Seydoux, Florence Pugh and Kaitlyn Dever of 'Little Women' wear Louis Vuitton's custom dresses and Louis Vuitton's fine jewelry collection, the 92nd Attended the Academy Awards and the Vanity Fair Oscar Party.<br />
@@ -172,7 +173,7 @@ function Info() {
                             <br />The bespoke red carpet costumes worn by the actors at the ceremony were handcrafted by artisans in the Atelier Rare & Exceptionnel, a symbol of Louis Vuitton's historic savoir-faire, especially in Florence. The collection of fine jewelery worn by Pue was completed in the Maison's high jewelery haute joaillerie by Vendôme, based on the artistry and skill of Louis Vuitton artisans.</p>
                         <button>READ MORE</button>
                     </div>
-                    <img className="sec7_pic" src={path + "/img/section7.png"} />
+
 
                 </div>
             </div>
