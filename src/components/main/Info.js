@@ -150,7 +150,7 @@ function Info() {
                     </div>
                 </div>
 
-                <div className="sec6 myScroll">
+                <div className="sec6">
                     <div className="sec6_box">
                         <img className="sec6_pic" src={path + "/img/art_banner.jpg"} />
                         <div className="sec6_txt">

@@ -817,4 +817,127 @@
         }
     }
 }
+@media screen and (max-width: 779px){
+    .location {
+        .inner {
+            position: relative;
+    
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+    
+            .ro_l {
+                border: 1px solid #333;
+                float: none;
+                width: 100%;
+                height: 500px;
+                background: #000;
+    
+                #map {
+                    width: 100%;
+                    height: 100%;
+                    filter: grayscale(1);
+                    transition: 0.5s;
+    
+                    &:hover{
+                        filter: grayscale(0);
+                    }
+                }
+            }
+    
+            .ro_r {
+                margin-top: 50px;
+                border: 1px solid #333;
+                height: 500px;
+                float: none;
+                width: 100%;
+    
+                .ro_txt {
+                    margin: 30px 0;
+                    text-align: center;
+                    width: 100%;
+    
+                    >input{
+                        width: 50%;
+                        
+                    }
+
+                    >a{
+                        width: 70%;
+                    }
+                    .traffic li{
+                        border: 1px solid #333;
+                        width: 70%;
+                        height: 40px;
+                        cursor: pointer;
+                        margin: 10px auto;
+                        font: normal 15px/40px "PT Sans Narrow";
+                        color: #333;
+                        letter-spacing: 0.5px;
+                        transition: 0.5s;
+                        &:hover{
+                            color: #fff;
+                            background: #333;
+                        }
+                    }
+                }
+    
+                .lo_scroll{
+                    height: 254px;
+                    overflow-y: scroll;
+    
+                    .branch li {
+                        font: normal 14px/1 "맑은 고딕";
+                        letter-spacing: 0.5px;
+                        background: #fff;
+                        text-align: center;
+                        border-top: 1px solid #333;
+                        padding: 20px;
+                        width: 100%;
+                        color: #333;
+                        cursor: pointer;
+                        transition: 0.5s;
+    
+                        >p{
+                            margin-top: 5px;
+                            font: normal 12px/1 "arial";
+                            letter-spacing: 0.5px;
+                        }
+                        >button{
+                            background: none;
+                            border: none;
+                            border-bottom: 1px solid #333;
+                            margin-top: 10px;
+                            font: normal 13px/1 "PT Sans Narrow";
+                            color: #555;
+                            letter-spacing: 0.5px;
+                            padding-bottom: 5px;
+                        }
+    
+                        &.on {
+                            background: #333;
+                            color: #fff;
+                            border-top: 1px solid #fff;
+    
+                            >button{
+                                color: #ccc;
+                                border-bottom: 1px solid #ccc;
+                            }
+    
+                        }
+                    }
+    
+                        
+                }
+    
+            }
+    
+            > p {
+                width: 100%;
+            }
+        }
+    }
+}
 

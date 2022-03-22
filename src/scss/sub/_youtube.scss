@@ -325,7 +325,9 @@
 @media screen and (max-width: 539px){
     .youtube{
         .inner{
-            
+            p{
+                width: 100%;
+            }
             .frame{
                 &::after{
                     content: "";
